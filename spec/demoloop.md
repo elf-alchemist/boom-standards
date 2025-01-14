@@ -44,17 +44,17 @@ The screen melt operates exactly as it does in doom1.9. Ports that support DEMOL
 
 ## Data type definitions
 
-|Name         |JSON Type         |Description|
-|-------------|------------------|-----------|
-|`entries`    | array of `entry` | The list of entries to cycle through. |
+|Name      |JSON Type         |Description|
+|----------|------------------|-----------|
+|`entries` | array of `entry` | The list of entries to cycle through. |
 
-|Name           |JSON Type|Description|
-|---------------|---------|-----------|
-|`primarylump`  | string  | The name of the lump to resolve for this entry. |
-|`secondarylump`| string  | For select lump types, the name of a second lump to resolve for this entry. |
-|`duration`     | number  | The amount of time in seconds that this screen must be displayed for. |
-|`type`         | integer | Enumeration with the following values: <br> <li> 0 - art screen <br> <li> 1 - demo lump |
-|`outrowipe`    | integer | Enumeration with the following values: <br> <li> 0 - immediate <br> <li> 1 - screen melt |
+|Name            |JSON Type|Description|
+|----------------|---------|-----------|
+|`primarylump`   | string  | The name of the lump to resolve for this entry. |
+|`secondarylump` | string  | For select lump types, the name of a second lump to resolve for this entry. |
+|`duration`      | number  | The amount of time in seconds that this screen must be displayed for. |
+|`type`          | integer | Enumeration with the following values: <br> <li> 0 - art screen <br> <li> 1 - demo lump |
+|`outrowipe`     | integer | Enumeration with the following values: <br> <li> 0 - immediate <br> <li> 1 - screen melt |
 
 ### Legalese
 
