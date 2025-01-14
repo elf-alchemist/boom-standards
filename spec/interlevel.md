@@ -1,5 +1,26 @@
 # Interlevel Lumps
 
+```
+map MAP02
+{
+  EnterAnim = "INTERE1"
+  ExitAnim = "INTERE1"
+}
+```
+
+```json
+{
+  "type": "interlevel",
+  "version": "1.0.0",
+  "metadata": null,
+  "data": {
+    "music": "D_INTER1",
+    "backgroundimage": "INTER01",
+    "layers": { ... }
+  }
+}
+```
+
 A way of defining background images for victory screens has existed in UMAPINFO for a few years now. But it has never handled the animation capabilities that were on display in the original three episodes from Doom. This specification documents the data format that replicates the capabilities of Doom’s victory screen animations.
 
 ## Scope of features
@@ -8,7 +29,7 @@ This specification has been written to handle exactly what is required of the in
 
 ## JSON lump
 
-This specification uses the JSON Lump 1.0.0 formal specification as the root of its data storage, with a type of “`interlevel`” and a version of “`1.0.0`”.
+This specification uses the JSON Lump 1.0.0 formal specification as the root of its data storage, with a type of **`interlevel`** and a version of **`1.0.0`**.
 
 ## Terminology
 

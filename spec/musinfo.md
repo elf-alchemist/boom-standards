@@ -1,4 +1,4 @@
-# `MUSINFO` Revision 1
+# MUSINFO Revision 1
 
 Originally from Risen3D, and later adopted by PrBoom+ and other ports, this lump is used to control music changing behavior during a level's runtime.
 

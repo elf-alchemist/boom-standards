@@ -1,4 +1,4 @@
-# `SBARDEF`
+# SBARDEF
 
 A way of defining custom status bar layouts has not existed in most Doom source ports. This specification documents a data format and corresponding features that replicates and expands Doom’s status bar rendering functionality.
 
@@ -168,7 +168,7 @@ The session type has the following values:
 
 The game version and game mode parameters match those defined in the GAMECONF specification.
 
-The item parameters match those defined by the **Pickup item type** Thing field in the IDHACKED24 specification. Note that the following item types always resolve to **false**:
+The item parameters match those defined by the **Pickup item type** Thing field in the ID24HACKED specification. Note that the following item types always resolve to **false**:
 
 - -1 - no item
 - 0 - message only
@@ -186,14 +186,14 @@ The hud mode has the following values:
 
 ## Data type definitions
 
-#### root
+### root
 
 | Name          | Type                  | Description |
 |---------------|-----------------------|-------------|
 | `numberfonts` | array of `numberfont` | An array of number fonts. Must not be null; must contain at least one entry. |
 | `statusbars`  | array of `statusbar`  | An array of status bars. Must not be null; must contain at least one entry. |
 
-#### numberfont
+### numberfont
 
 | Name   | Type    | Description |
 |--------|---------|-------------|
@@ -201,7 +201,7 @@ The hud mode has the following values:
 | `type` | integer | One of the values matching the type enumeration described in the number font section. |
 | `stem` | string  | A string representing the first few characters of each glyph’s name in the WAD dictionary. Note that 3 characters is the maximum if you want to resolve the minus and percent glyphs; longer stems are allowed thanks to Doom and Doom II requiring it for the STYS number font. |
 
-#### statusbar
+### statusbar
 
 | Name               | Type                | Description |
 |--------------------|---------------------|-------------|
@@ -210,7 +210,7 @@ The hud mode has the following values:
 | `fillflat`         | string              | The name of the flat to fill the extended virtual space with |
 | `children`         | array of `sbarelem` | An array of child elements. |
 
-#### sbarelem
+### sbarelem
 
 | Name             | Type        | Description |
 |------------------|-------------|-------------|
@@ -222,7 +222,7 @@ The hud mode has the following values:
 | `number`         | `number`    | Contents to describe this element as a Number. Can be undefined. |
 | `percent`        | `percent`   | Contents to describe this element as a Percent. Can be undefined. |
 
-#### canvas, face, facebg
+### canvas, face, facebg
 
 | Name          | Type                 | Description |
 |---------------|----------------------|-------------|
@@ -234,14 +234,14 @@ The hud mode has the following values:
 | `conditions`  | array of `condition` | A series of conditions to meet to render both this and all child elements. Can be null; an array length of 0 is considered an error condition. |
 | `children`    | array of `sbarelem`  | An array of child elements. Can be null; an array length of 0 is considered an error condition. |
 
-#### condition
+### condition
 
 | Name        | Type    | Description |
 |-------------|---------|--------|
 | `condition` | enum    | The type of condition to resolve, as described by the table in the “Element conditions” section |
 | `param`     | integer | A parameter as described for each condition type. |
 
-#### graphic
+### graphic
 
 | Name          | Type                 | Description |
 |---------------|----------------------|-------------|

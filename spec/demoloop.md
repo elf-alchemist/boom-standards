@@ -1,4 +1,4 @@
-# `DEMOLOOP`
+# DEMOLOOP
 
 The demo loop has long been a hardcoded feature of Doom. Now it isn’t. This specification details the functionality and data required to create new demo loops in a generic fashion
 
@@ -10,7 +10,7 @@ This specification uses the JSON Lump 1.0.0 formal specification as the root of 
 
 Only one `DEMOLOOP` lump is to be parsed, using the name “DEMOLOOP” to resolve the lump from the WAD dictionary in the standard manner (ie the last one encountered is the one resolved).
 
-When a `DEMOLOOP` lump is not found, it is expected that the behavior of the demo loop revert to that of doom1.9 and change the loop according to what IWAD is loaded and what game mode the engine is in.
+When a `DEMOLOOP` lump is not found, it is expected that the behavior of the demo loop revert to that of the Vanilla behavior and change the loop according to what IWAD is loaded and what game mode the engine is in.
 
 ## How a demo loop functions
 
@@ -29,7 +29,7 @@ A `secondarylump` when defined is the music track to play once while this screen
 
 ## Demo lumps
 
-For this entry, the engine will playback the pre-recorded in-game demo as found in the lump resolved by primarylump. The playback follows exactly doom1.9 rules - the entry will last as long as the recorded demo does; and the music track is played as according to the map the demo is recorded for.
+For this entry, the engine will playback the pre-recorded in-game demo as found in the lump resolved by primarylump. The playback follows exactly Vanilla rules - the entry will last as long as the recorded demo does; and the music track is played as according to the map the demo is recorded for.
 The duration field is not used for this kind of entry.
 
 ## Wipes
@@ -39,18 +39,18 @@ When transitioning to another entry, the current entry defines the kind of wipe 
 * Immediate (ie no wipe)
 * Screen melt
 
-The screen melt operates exactly as it does in doom1.9. Ports that support DEMOLOOP should make an effort to support the 160-column melt, and not take longer to complete the wipe, than the original release of Doom implemented to ensure consistency of visual presentation between ports.
+The screen melt operates exactly as it does in Vanilla. Ports that support DEMOLOOP should make an effort to support the 160-column melt, and not take longer to complete the wipe, than the original release of Doom implemented to ensure consistency of visual presentation between ports.
 
 ## Data type definitions
 
-|Name      |JSON Type         |Description|
-|----------|------------------|-----------|
-|`entries` | array of `entry` | The list of entries to cycle through. |
+| Name      | JSON Type        | Description |
+|-----------|------------------|-------------|
+| `entries` | array of `entry` | The list of entries to cycle through. |
 
-|Name            |JSON Type|Description|
-|----------------|---------|-----------|
-|`primarylump`   | string  | The name of the lump to resolve for this entry. |
-|`secondarylump` | string  | For select lump types, the name of a second lump to resolve for this entry. |
-|`duration`      | number  | The amount of time in seconds that this screen must be displayed for. |
-|`type`          | integer | Enumeration with the following values: <br> <li> 0 - art screen <br> <li> 1 - demo lump |
-|`outrowipe`     | integer | Enumeration with the following values: <br> <li> 0 - immediate <br> <li> 1 - screen melt |
+| Name            | JSON Type | Description |
+|-----------------|-----------|-------------|
+| `primarylump`   | string    | The name of the lump to resolve for this entry. |
+| `secondarylump` | string    | For select lump types, the name of a second lump to resolve for this entry. |
+| `duration`      | number    | The amount of time in seconds that this screen must be displayed for. |
+| `type`          | integer   | Enumeration with the following values: <br> <li> 0 - art screen <br> <li> 1 - demo lump |
+| `outrowipe`     | integer   | Enumeration with the following values: <br> <li> 0 - immediate <br> <li> 1 - screen melt |

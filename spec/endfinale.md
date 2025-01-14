@@ -8,7 +8,7 @@ This specification has been written to handle exactly what is required every fin
 
 ## JSON lump
 
-This specification uses the JSON Lump 1.0.0 formal specification as the root of its data storage, with a type of “`finale`” and a version of “`1.0.0`”.
+This specification uses the JSON Lump 1.0.0 formal specification as the root of its data storage, with a type of **`finale`** and a version of **`1.0.0`**.
 
 ## UMAPINFO additions
 
