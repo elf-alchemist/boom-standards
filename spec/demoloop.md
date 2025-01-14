@@ -1,5 +1,4 @@
-
-# `DEMOLOOP` 0.99.1
+# `DEMOLOOP`
 
 The demo loop has long been a hardcoded feature of Doom. Now it isn’t. This specification details the functionality and data required to create new demo loops in a generic fashion
 
@@ -55,8 +54,3 @@ The screen melt operates exactly as it does in doom1.9. Ports that support DEMOL
 |`duration`      | number  | The amount of time in seconds that this screen must be displayed for. |
 |`type`          | integer | Enumeration with the following values: <br> <li> 0 - art screen <br> <li> 1 - demo lump |
 |`outrowipe`     | integer | Enumeration with the following values: <br> <li> 0 - immediate <br> <li> 1 - screen melt |
-
-### Legalese
-
-Copyright © 2024 Ethan Watson  
-ID24 Formal Specification is released under CC0 1.0  

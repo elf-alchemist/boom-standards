@@ -1,4 +1,4 @@
-# Finale Lumps 0.99.1
+# Finale Lumps
 
 There was no way of altering a finale (art screen, bunny scroller, cast roll call) in the original Doom II outside of lump replacement and DeHackEd modification of actor names. This specification documents a data format that allows customisation of the cast call screen.
 
@@ -97,8 +97,3 @@ Each frame lets you define a tranmap, a translation, a duration, a sound to play
 | Name          | Type                  | Description |
 |---------------|-----------------------|-------------|
 | `castmembers` | array of `castmember` | Lump name of the patch to be stitched together with the `background` image from `root` |
-
-### Legalese
-
-Copyright © 2024 Ethan Watson  
-ID24 Formal Specification is released under CC0 1.0  

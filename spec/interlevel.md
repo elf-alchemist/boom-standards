@@ -1,4 +1,4 @@
-# Interlevel Lumps 0.99.2
+# Interlevel Lumps
 
 A way of defining background images for victory screens has existed in UMAPINFO for a few years now. But it has never handled the animation capabilities that were on display in the original three episodes from Doom. This specification documents the data format that replicates the capabilities of Doom’s victory screen animations.
 
@@ -167,9 +167,3 @@ This is used exclusively as a shortcut for the hardcoded tables to handle the �
 ### Durations
 
 Durations have been intentionally specified as seconds for futureproofing purposes. As this specification defines a non-deterministic visual-only element, there is no particular need for the animations to adhere to Doom’s 35Hz tic rate. The reference implementation however does adhere to the tic rate, so values are converted to tics on load and stored in the relevant structures.
-
-
-### Legalese
-
-Copyright © 2024 Ethan Watson  
-ID24 Formal Specification is released under CC0 1.0  

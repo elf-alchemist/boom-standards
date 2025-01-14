@@ -1,4 +1,4 @@
-# Translations formal specification 0.99.2
+# Translations
 
 Translations from one palette range to another have always been hardcoded into the Doom engine, but only specifically for players 2-4 in a multiplayer match. This specification details a way of defining translation tables through data, as well as a few other handy things to have when dealing with multiplayer matches.
 
@@ -60,7 +60,7 @@ Note that being palette based, any true colour translations should map to the cl
 
 ### Data type definitions
 
-##### root
+#### root
 
 | Name             | Type              | Description |
 |------------------|-------------------|-------------|
@@ -70,8 +70,3 @@ Note that being palette based, any true colour translations should map to the cl
 | `interback`      | string            | A lump representing the player background on the interlevel screens. Can be null. If this lump does not exist, it is an error condition. |
 | `intertranslate` | bool              | Determines if `interback` should use the translation table to render. |
 | `table`          | array of integers | An array of translation palette indices. Must be exactly 256 elements; any other length is an error condition. |
-
-### Legalese
-
-Copyright © 2024 Ethan Watson  
-ID24 Formal Specification is released under CC0 1.0  

@@ -1,4 +1,4 @@
-# JSON Lump 0.99.2
+# JSON Lump
 
 ```json
 {
@@ -84,8 +84,3 @@ Upon successfully validating the above specification, `M_ParseJSONLump` will the
 ### JSONLumpVersion struct
 
 The JSONLumpVersion struct contains numerical representations of the `major`, `minor`, and `revision` fields. It also contains a `devversion` field. This is intended to be used exclusively during development of a new revision of a feature. As it is not serialised anywhere or specified in the standard, this value should never be relied on for a published specification or data that relies on any given version of a specification
-
-### Legalese
-
-Copyright © 2024 Ethan Watson  
-ID24 Formal Specification is released under CC0 1.0  

@@ -1,4 +1,4 @@
-# SKYDEFS 0.99.2
+# SKYDEFS
 
 A way of defining custom skies without using transfer lines has not existed in most Doom source ports. This specification documents a data format and corresponding features that replicates and expands Doom's sky rendering functionality.
 
