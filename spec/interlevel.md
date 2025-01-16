@@ -155,11 +155,19 @@ When zero `conditions` are declared in a `condition array`, the `condition array
 
 ### frame
 
-broken table
+| Name          | Type                 | Description |
+|---------------|----------------------|-------------|
+| `image`       | string               | The patch to be rendered |
+| `type`        | integer              | Bitfield with the following values: <br> <li> 0x0000: None <br> <li> 0x0001: Infinite duration <br> <li> 0x0002: Fixed duration <br> <li> 0x0004: Random duration <br> <li> 0x1000: Random first frame offset <br> **Infinite duration**, **fixed duration**, and **random duration** correspond to the definitions found in the Frames subsection and are in an exclusive binary bit group. Only one of these bits can be selected at a time; zero bits selected or more than one bit selected is to be considered an error condition. |
+| `duration`    | number               | The number of seconds that this frame is displayed for. |
+| `maxduration` | number               | The maximum number of seconds this frame is displayed for if **random duration** is selected in the **type** field. |
 
 ### condition
 
-broken table
+| Name         | Type                 | Description |
+|--------------|----------------------|-------------|
+| `condition`  | integer              | Enumeration with the following values: <br> <li> 0: None <br> <li> 1: Current map number is greater than the param value <br> <li> 2: Current map number is equal to the param value <br> <li> 3: The map number corresponding to the param value has been visited <br> <li> 4: The current map is not a secret map <br> <li> 5: Any secret map has been visited <br> <li> 6: The current screen is the tally screen <br> <li> 7: The current screen is the “entering” screen <br> This enumeration determines the test that will be run when the parent object is instantiated. |
+| `param`      | integer              | A value that this condition checks against, as defined in the `condition` field. |
 
 ### Reference implementation details
 
