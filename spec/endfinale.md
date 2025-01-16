@@ -71,14 +71,14 @@ Each frame lets you define a tranmap, a translation, a duration, a sound to play
 
 ### root
 
-| Name          | Type          | Description |
-|---------------|---------------|-------------|
-|`type`         | enum          | Allows the following values: <br> <li> 0 - art screen <br> <li> 1 - bunny scroller <br> <li> 2 - cast roll call |
-|`music`        | string        | Lump name of music to be looped while this background lump is displayed. |
-|`background`   | string        | Lump name of the patch to be rendered to the screen. |
-|`donextmap`    | bool          | Allows the game to progress to the next map if set to true. |
-|`bunny`        | bunny         | Information for the bunny scroller. Can be null; if `type` is not 1 and `bunny` is not null then it is considered an error condition. |
-|`castrollcall` | castrollcall  | Information for the cast roll call. Can be null; if `type` is not 2 and `castrollcall` is not null then it is considered an error condition. |
+| Name           | Type          | Description |
+|----------------|---------------|-------------|
+| `type`         | enum          | Allows the following values: <br> <li> 0 - art screen <br> <li> 1 - bunny scroller <br> <li> 2 - cast roll call |
+| `music`        | string        | Lump name of music to be looped while this background lump is displayed. |
+| `background`   | string        | Lump name of the patch to be rendered to the screen. |
+| `donextmap`    | bool          | Allows the game to progress to the next map if set to true. |
+| `bunny`        | bunny         | Information for the bunny scroller. Can be null; if `type` is not 1 and `bunny` is not null then it is considered an error condition. |
+| `castrollcall` | castrollcall  | Information for the cast roll call. Can be null; if `type` is not 2 and `castrollcall` is not null then it is considered an error condition. |
 
 
 #### bunny
