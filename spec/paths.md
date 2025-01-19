@@ -1,9 +1,9 @@
 # Paths
 
 ```bash
-export DOOMWADDIR="~/.local/share/games/doom"
-export DOOMWADPATH="/usr/local/share/games/doom:/usr/local/share/doom:/usr/share/games/doom:/usr/share/doom"
 export DOOMPORT="chocolate-doom"
+export DOOMWADDIR="$XDG_DATA_DIR/games/doom"
+export DOOMWADPATH="/usr/local/share/games/doom:/usr/local/share/doom:/usr/share/games/doom:/usr/share/doom"
 ```
 
 ## IWADs
@@ -15,7 +15,7 @@ export DOOMPORT="chocolate-doom"
 | `doom.wad`      | ultimate     | Retail     | The Ultimate Doom       |
 | `doom2.wad`     | 1.9          | Commercial | Doom II: Hell on Earth  |
 | `tnt.wad`       | final        | Commercial | TNT: Evilution          |
-| `plutonia.wad`  | final        | Commercial | The Plutonia Experiemnt |
+| `plutonia.wad`  | final        | Commercial | The Plutonia Experiment |
 | `freedoom1.wad` | ultimate     | Retail     | Freedoom: Phase 1       |
 | `freedoom2.wad` | 1.9          | Commercial | Freedoom: Phase 2       |
 | `freedm.wad`    | 1.9          | Commercial | FreeDM                  |
@@ -63,43 +63,47 @@ export DOOMPORT="chocolate-doom"
 
 ### XDG Base
 
-| Environment Variable | Standard *nix path            | Description |
+| Environment Variable | Default *nix path             | Description |
 |----------------------|-------------------------------|-------------|
-| `HOME`               | `/home/<username>`            | home        |
-| `XDG_CACHE_HOME`     | `$HOME/.cache`                | cache       |
-| `XDG_CONFIG_HOME`    | `$HOME/.config`               | config      |
-| `XDG_BIN_HOME`       | `$HOME/.local/bin`            | executable  |
-| `XDG_DATA_HOME`      | `$HOME/.local/share`          | data        |
-| `XDG_STATE_HOME`     | `$HOME/.local/state`          | state       |
-| `XDG_RUNTIME_DIR`    | `/run/user/$UID`              | runtime     |
-| `XDG_CONFIG_DIRS`    | `/etc/xdg`                    | XDG config  |
-| `XDG_DATA_DIRS`      | `/usr/local/share:/usr/share` | XDG data    |
+| `HOME`               | `/home/<username>`            | The user's home directory, serving as a reference for the following variables, this directory should remain untouched by your application. No files or new folders should be saved here unless truly, unequivocally, absolutely necessary. |
+| `XDG_CACHE_HOME`     | `$HOME/.cache`                | Used to cache resources, do _not_ use to save persistent files, they may be deleted by the user or their machine at any given moment. |
+| `XDG_CONFIG_HOME`    | `$HOME/.config`               | Used to save persistent configuration settings files, assumes the user can both make a backup and also version control any and all contents of this directory. |
+| `XDG_BIN_HOME`       | `$HOME/.local/bin`            | Used to install software that is either locally built, or installed separately from the user's package manager. |
+| `XDG_DATA_HOME`      | `$HOME/.local/share`          | Used to store persistent data files, assumes the user can backup any and all contents of this directory. |
+| `XDG_STATE_HOME`     | `$HOME/.local/state`          | Used to store persistent state files, assumes the user can backup any and all contents of this directory. |
+| `XDG_RUNTIME_DIR`    | `/run/user/$UID`              |  |
+| `XDG_CONFIG_DIRS`    | `/etc/xdg`                    |  |
+| `XDG_DATA_DIRS`      | `/usr/local/share:/usr/share` |  |
 
 ### User
 
-| Environment Variable  | *nix path         | Description |
+| Environment Variable  | Default *nix path | Description |
 |-----------------------|-------------------|-------------|
-| `XDG_DESKTOP_DIR`     | `$HOME/Desktop`   | desktop     |
-| `XDG_DOCUMENTS_DIR`   | `$HOME/Documents` | document    |
-| `XDG_DOWNLOAD_DIR`    | `$HOME/Downloads` | download    |
-| `XDG_MUSIC_DIR`       | `$HOME/Music`     | audio       |
-| `XDG_PICTURES_DIR`    | `$HOME/Pictures`  | picture     |
-| `XDG_PUBLICSHARE_DIR` | `$HOME/Public`    | public      |
-| `XDG_TEMPLATES_DIR`   | `$HOME/Templates` | template    |
-| `XDG_VIDEOS_DIR`      | `$HOME/Videos`    | video       |
+| `XDG_DESKTOP_DIR`     | `$HOME/Desktop`   | User's desktop graphical interface; Optionally save `*.desktop` files here. |
+| `XDG_DOCUMENTS_DIR`   | `$HOME/Documents` | User's documents; Office and other assorted work. |
+| `XDG_DOWNLOAD_DIR`    | `$HOME/Downloads` | User's general downloaded files directory; Usually messy. |
+| `XDG_MUSIC_DIR`       | `$HOME/Music`     | User's locally installed music files; Oft sparse, rarely filled. |
+| `XDG_PICTURES_DIR`    | `$HOME/Pictures`  | User's image files; Screenshots go here. |
+| `XDG_PUBLICSHARE_DIR` | `$HOME/Public`    | User's network-shared files. |
+| `XDG_TEMPLATES_DIR`   | `$HOME/Templates` | User's document template files. |
+| `XDG_VIDEOS_DIR`      | `$HOME/Videos`    | User's saved video files. |
 
-### Source port
+### Application guidelines
 
-| *nix path                              | Description |
-|----------------------------------------|-------------|
-| `$XDG_CACHE_HOME/<project_shortname>`  | cache       |
-| `$XDG_CONFIG_HOME/<project_shortname>` | config      |
-| `$XDG_DATA_HOME/<project_shortname>`   | data        |
-| `$XDG_RUNTIME_DIR/<project_shortname>` | runtime     |
+| Default *nix path                  | Description |
+|------------------------------------|-------------|
+| `$XDG_CACHE_HOME/<shortname>/`     | Store cache in the cache directory, under a sub-directory that matches you project's lowercase short name. |
+| `$XDG_CONFIG_HOME/<shortname>/`    | Store configuration settings files in the cache directory, under a sub-directory that matches you project's lowercase short name.  |
+| `$XDG_DATA_HOME/<shortname>/`      | Store general data files in the data directory, under a sub-directory that matches you project's lowercase short name. |
+| `$XDG_PICTURES_DIR/<capitalname>/` | Store screenshots and other in-game saved images in the data directory, under a sub-directory that matches you project's uppercase short name. |
+| `$XDG_VIDEOS_DIR/<capitalname>/`   | Store videos and other in-game recordings in the data directory, under a sub-directory that matches you project's uppercase short name. |
+| `$XDG_DATA_DIR/applications/`      | Store application's persistent `*.desktop` file in here. |
+| `$XDG_DATA_DIR/icons/hicolor/`     | Store application's icons, appropriately, under the `16x16/`, `32x32/`, `64x64/`, `128x128/` and etc, sub-directories. |
 
 ### Doom
 
 | Environment Variable | Value                       | Description |
 |----------------------|-----------------------------|-------------|
-| `DOOMPORT`           | `doom`                      | User-defineable, default Doom source port executable name. |
-| `DOOMWADDIR`         | `$XDG_DATA_HOME/games/doom` | User-defineable, default Doom WAD search path. |
+| `DOOMPORT`           | `doom`                      | Default Doom source port executable name. |
+| `DOOMWADDIR`         | `$XDG_DATA_HOME/games/doom` | Default Doom WAD search path. |
+| `DOOMWADPATH`        | `/usr/local/share/games/doom` <br> `/usr/local/share/doom` <br> `/usr/share/games/doom` <br> `/usr/share/doom` | Colon-separated default Doom WAD search paths list. |
