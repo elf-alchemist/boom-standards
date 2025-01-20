@@ -30,11 +30,11 @@ In addition, four extra translations are built-in. While matching the ranges def
 
 The default tables define the `sbarback`, `interback`, and the `table` fields to their Vanilla equivalents (with the extra translations using the T_GREEN background and translated with the defined table at render time), with the order of entries defined above corresponding to both player numbers and the order of lumps resolved for multiplayer purposes.
 
-## Translation initialisation order
+## Translation initialization order
 
-Translation lumps are loaded in at renderer initialisation. They are added to the translation lookup table in the following order:
+Translation lumps are loaded in at renderer initialization. They are added to the translation lookup table in the following order:
 
-- Lumps defined by `Translation` entries in a thing’s Dehacked entry
+- Lumps defined by `Translation` entries in a thing’s DeHackEd entry
 - Translations defined in the `playertranslations` field in GAMECONF
 - Built-in tables that have not been previously loaded as a lump
 
@@ -60,7 +60,7 @@ Any thing that has the MF_TRANSLATION field set in its mobjinfo_t flags and does
 
 It is anticipated that users will want to use [ZDoom style translations](https://zdoom.org/wiki/Translation) when creating their translation lumps. However, all lump specifications in the ID24 feature suite have been designed to be reflections of data as opposed to command lists. As such, it is recommended that editors use the `metadata` field of a JSON lump to store ZDoom translation information and apply it to the table field on modification/save.
 
-Note that being palette based, any true colour translations should map to the closest colour found in the palette.
+Note that being palette based, any true color translations should map to the closest color found in the palette.
 
 ## Data type definitions
 
@@ -68,7 +68,7 @@ Note that being palette based, any true colour translations should map to the cl
 
 | Name             | Type              | Description |
 |------------------|-------------------|-------------|
-| `name`           | string            | A dehacked mnemonic representing the name of this translation. |
+| `name`           | string            | A DeHackEd mnemonic representing the name of this translation. |
 | `sbarback`       | string            | A lump representing the face background on the status bar. Can be null. If this lump does not exist, it is an error condition. |
 | `sbartranslate`  | bool              | Determines if `sbarback` should use the translation table to render. |
 | `interback`      | string            | A lump representing the player background on the interlevel screens. Can be null. If this lump does not exist, it is an error condition. |

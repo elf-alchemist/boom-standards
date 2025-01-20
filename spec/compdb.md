@@ -30,7 +30,7 @@ This specification uses the JSON Lump 1.0.0 formal specification as the root of 
 
 ## Checksum and identifying maps
 
-When reading a map's data to perform the checksum validation, your port should **_only_** take the map's label (`MAPxy` or `ExMy`), `THINGS`, `LINEDEFS`, `SIDEDEFS` and `SECTORS` lumps into the MD5 context.
+When reading a map's data to perform the checksum validation, your port should **_only_** take the map's label (`MAPxy`, `ExMy`), `THINGS`, `LINEDEFS`, `SIDEDEFS` and `SECTORS` lumps into the MD5 context.
 
 ## Data type definitions
 
@@ -45,9 +45,9 @@ When reading a map's data to perform the checksum validation, your port should *
 | Name        | Type              | Description |
 |-------------|-------------------|-------------|
 | `name`      | string            | Human readable identifier for the specific WAD and map that the compatibility setting is applied to. |
-| `md5`       | string            | MD5 checksum digest string of the given map. |
-| `complevel` | string            | Compatibility level to apply when entering the given map, overinding the WAD's default compl evel. Can be null. |
-| `options`   | array of `option` | Array of specific compatibility flag to apply when entering the given map, overiding the WAD's default comp flag setting. |
+| `md5`       | string            | MD5 checksum digest of the given map. |
+| `complevel` | string            | Compatibility level to apply when entering the given map, overriding the WAD's default complevel. Can be null. |
+| `options`   | array of `option` | Array of specific compatibility flag to apply when entering the given map, overriding the WAD's default comp flag setting. Can be null. |
 
 ### option
 

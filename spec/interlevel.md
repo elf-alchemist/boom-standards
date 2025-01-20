@@ -195,4 +195,4 @@ This is used exclusively as a shortcut for the hardcoded tables to handle the �
 
 ### Durations
 
-Durations have been intentionally specified as seconds for futureproofing purposes. As this specification defines a non-deterministic visual-only element, there is no particular need for the animations to adhere to Doom’s 35Hz tic rate. The reference implementation however does adhere to the tic rate, so values are converted to tics on load and stored in the relevant structures.
+Durations have been intentionally specified as seconds for future-proofing purposes. As this specification defines a non-deterministic visual-only element, there is no particular need for the animations to adhere to Doom’s 35Hz tic rate. The reference implementation however does adhere to the tic rate, so values are converted to tics on load and stored in the relevant structures.

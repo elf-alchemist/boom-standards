@@ -12,7 +12,7 @@ This specification uses the JSON Lump 1.0.0 formal specification as the root of 
 
 ## Only one lump
 
-Status bars are expected to be defined with the `SBARDEF` lump. If this lump does not exist, then the original behaviour for status bars is to be used. For WAD resolution purposes, this lump follows the standard rules and resolves to the last lump found in the WAD dictionary with that name.
+Status bars are expected to be defined with the `SBARDEF` lump. If this lump does not exist, then the original behavior for status bars is to be used. For WAD resolution purposes, this lump follows the standard rules and resolves to the last lump found in the WAD dictionary with that name.
 
 As there is only one lump, any custom status bars are expected to redefine an entire status bar chain and not just redefine the bar they are interested in.
 
@@ -20,7 +20,7 @@ As there is only one lump, any custom status bars are expected to redefine an en
 
 **Status bars** are to be rendered in a virtual 320x200 resolution when in fullscreen mode (referred to as the virtual environment), presented at a 4:3 aspect ratio with rectangular pixels at a 1:1.2 aspect ratio (ie 1.2 vertical units are required to maintain the 4:3 aspect ratio). This is identical to the original Doom and Doom II presentation. The virtual resolution is enforced to allow equivalent presentations at any actual device output resolutions.
 
-As non-fullscreen statusbars specify their height, the virtual resolution becomes `320 x &lt;statusbar height&gt;`. While coordinates are specified with a (0,0) origin representing the top-left corner of the status bar, the bar itself is rendered to the screen using a virtual Y coordinate of `200 - &lt;statusbar height&gt;`.
+As non-fullscreen status bars specify their height, the virtual resolution becomes `320 x &lt;statusbar height&gt;`. While coordinates are specified with a (0,0) origin representing the top-left corner of the status bar, the bar itself is rendered to the screen using a virtual Y coordinate of `200 - &lt;statusbar height&gt;`.
 
 Resources are allowed to render outside of the virtual environment. This allows for the presentation to adapt to widescreen aspect ratios.
 
@@ -47,7 +47,7 @@ A rendering target aspect ratio of less than 4:3 is treated differently for full
 
 The 3D viewport is expected to adapt to the scaling of the status bar.
 
-A rendering target aspect ratio of greater than 4:3 has no effect on fullscreen statusbars. For non-fullscreen status bars, the extra columns on either side of the status bar are filled with a flat that is either defined by the status bar itself; or equivalent to the border graphic used in each game (FLOOR7_2 for Doom; GRNROCK for Doom II). This must be rendered using the virtual 320x200 space and not the native render resolution, with the top left corner of the flat occupying the `(0, 200 - &lt;statusbar height&gt;)` position.
+A rendering target aspect ratio of greater than 4:3 has no effect on fullscreen status bars. For non-fullscreen status bars, the extra columns on either side of the status bar are filled with a flat that is either defined by the status bar itself; or equivalent to the border graphic used in each game (`FLOOR7_2` for Doom; `GRNROCK` for Doom II). This must be rendered using the virtual 320x200 space and not the native render resolution, with the top left corner of the flat occupying the `(0, 200 - &lt;statusbar height&gt;)` position.
 
 ## Status bar number fonts
 
@@ -292,6 +292,6 @@ The hud mode has the following values:
 
 ## Reference implementation details
 
-The SBARDEF files that come with extras.wad and id24res.wad contain the classic status bar, a full screen overlay status bar, and a blank full screen. Demos will always use the last status bar in an SBARDEF when loaded, so any custom SBARDEFs should also define a blank fullscreen as the final statusbar entry.
+The SBARDEF files that come with `extras.wad` and `id24res.wad` contain the classic status bar, a full screen overlay status bar, and a blank full screen. Demos will always use the last status bar in an SBARDEF when loaded, so any custom SBARDEFs should also define a blank fullscreen as the final statusbar entry.
 
 As it is completely data driven, the status bar behavior is easily switchable by selectively including resources such as id24res.wad only when ID24 mode is enabled. The code makes no effort to special case things otherwise and relies purely on WAD lump resolution rules to display the intended status bar.

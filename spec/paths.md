@@ -43,6 +43,9 @@ export DOOMWADPATH="/usr/local/share/games/doom:/usr/local/share/doom:/usr/share
 | `iddm1.wad`        | `doom2.wad` | vanilla   | id Deathmatch Pack 1          |
 | `id1.wad`          | `doom2.wad` | mbf21     | Legacy of Rust                |
 | `id24res.wad`      | Any         | id24      | ID24 Resources                |
+| `fd24res.wad`      | Any         | id24      | FreeDoom ID24 Resources       |
+| `extras.wad`       | Any         | Any       | Extras                        |
+| `fd-extras.wad`    | Any         | Any       | FreeDoom Extras               |
 
 ### Sideline PWADs
 

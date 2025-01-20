@@ -12,7 +12,7 @@ This specification uses the JSON Lump 1.0.0 formal specification as the root of 
 
 ## Only one lump
 
-Skydefs are expected to be defined with the `SKYDEFS` lump. If this lump does not exist, then the original behaviour for skies is to be used. For WAD resolution purposes, this lump follows the standard rules and resolves to the last lump found in the WAD dictionary with that name.
+Skydefs are expected to be defined with the `SKYDEFS` lump. If this lump does not exist, then the original behavior for skies is to be used. For WAD resolution purposes, this lump follows the standard rules and resolves to the last lump found in the WAD dictionary with that name.
 
 ## Default skies
 
@@ -61,7 +61,7 @@ Fire skies replicate the functionality of the Playstation Doom/Doom 64 fire skie
 
 Fire skies have the following parameters:
 
-- **Palette** - a linear series of palette indices, representing the palette index that the fire decays to (and is cleared to) to the paletteindex that the fire starts at in sequential order.
+- **Palette** - a linear series of palette indices, representing the palette index that the fire decays to (and is cleared to) to the palette index that the fire starts at in sequential order.
 - **Update Time** - how many seconds it takes for the fire to perform the next step of the simulation. This must be a minimum of one rendered frame.
 
 Fire skies are to overwrite the texture data for the target texture. This will result in the texture always displaying the generated fire instead of the original texture data. It is recommended as a result that you use unique textures for your fire targets. Note that this requirement means that a fire sky texture can be inside an **ANIMATED** definition and show up in another sky definition as a result.

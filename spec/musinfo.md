@@ -6,8 +6,6 @@ Originally from Risen3D, and later adopted by PrBoom+ and other ports, this lump
 
 The "Music Changer", thing number 145, is used by the MUSINFO system to determine which music track the port will start playing when a given player enters the same sector as a given "Music Changer".
 
-This change is  local-only, that is to say it changes solely for that given player, not other players in a multiplayer or netdemo session.
-
 It uses multiple `doomednum` values to do so, in the 14100 to 14164 inclusive range, which associated with the respective internal values 0 to 64.
 
 Authors may set MUSINFO values between 1 to 64, with the value 0 (and it's respective `doomednum` entry) being reserved solely to return to the given map's default track.
@@ -43,5 +41,5 @@ MAP02
 
 MAP03
 1 D_DOOM
-2 D_BBTBLU
+2 D_DDTBLU
 ```

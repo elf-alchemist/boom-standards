@@ -17,9 +17,9 @@ Most values inside `GAMECONF` lumps are considered to be destructive, ie they ov
 
 Every value inside a `GAMECONF` definition is allowed to be null. This indicates that values defined by a previous `GAMECONF` lump are not to be altered.
 
-Note that for the purposes of resolving `GAMECONF` lumps, you must only resolve the IWADs and PWADs defined by the user before engine initialisation. As such, any `GAMECONF` lump defined by a PWAD is expected to define every value it needs for functioning in a valid manner. Additional IWADs and PWADs defined by a `GAMECONF` are not to be parsed.
+Note that for the purposes of resolving `GAMECONF` lumps, you must only resolve the IWADs and PWADs defined by the user before engine initialization. As such, any `GAMECONF` lump defined by a PWAD is expected to define every value it needs for functioning in a valid manner. Additional IWADs and PWADs defined by a `GAMECONF` are not to be parsed.
 
-After `GAMECONF` lumps have been parsed, the engine will have an IWAD and a list of PWADs that it should then load and initialise for the game to continue in the usual manner.
+After `GAMECONF` lumps have been parsed, the engine will have an IWAD and a list of PWADs that it should then load and initialize for the game to continue in the usual manner.
 
 ## Supported engine versions
 
@@ -89,7 +89,7 @@ It is possible to apply a translation to every graphic resource defined in WADs 
 
 When encountering a WAD translation declaration, it is applied in the following manner:
 
-- The current IWAD (including that declared by the -iwad command line parameter or autodetermined by the initialisation path before handling GAMECONF)
+- The current IWAD (including that declared by the -iwad command line parameter or auto-determined by the initialization path before handling GAMECONF)
 - All declared PWADs except for the current one GAMECONF is being read from.
 
 WAD translations also apply to any resources provided by the source port.
