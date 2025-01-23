@@ -1,4 +1,4 @@
-# ID24HACKED
+# ID24 DeHackEd Extensions
 
 The creation of the ID24 standard has resulted in an expansion of the capabilities of Dehacked patches. This specification details the additions and changes required to support Dehacked patches under the ID24 featureset.
 

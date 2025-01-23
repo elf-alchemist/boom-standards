@@ -1,12 +1,5 @@
 # ID24 Mapping Extensions
 
-```
-map MAP07
-{
-	bossaction = 
-}
-```
-
 ### Baseline features
 
 The ID24 map additions are a superset of the following specifications:
