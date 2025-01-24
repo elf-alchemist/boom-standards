@@ -49,11 +49,12 @@ export DOOMWADPATH="/usr/local/share/games/doom:/usr/local/share/doom:/usr/share
 
 ### Sideline PWADs
 
-| File           | IWAD          | Complevel | Name         |
-|----------------|---------------|-----------|--------------|
-| `chex2.wad`    | `chex.wad`    | vanilla   | Chex Quest 2 |
-| `rekkr.wad`    | `doom.wad`    | vanilla   | REKKR        |
-| `rekbonus.wad` | `rekkrsl.wad` | vanilla   | REKKR: Bonus |
+| File           | IWAD          | Complevel | Name                |
+|----------------|---------------|-----------|---------------------|
+| `chex2.wad`    | `chex.wad`    | vanilla   | Chex Quest 2        |
+| `rekkr.wad`    | `doom.wad`    | vanilla   | REKKR               |
+| `rekbonus.wad` | `rekkrsl.wad` | vanilla   | REKKR: Bonus        |
+| `harmonyc.wad` | `doom2.wad`   | vanilla   | Harmony: Compatible |
 
 ### Legacy of Rust modding reference
 
