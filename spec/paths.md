@@ -49,12 +49,12 @@ export DOOMWADPATH="/usr/local/share/games/doom:/usr/local/share/doom:/usr/share
 
 ### Sideline PWADs
 
-| File           | IWAD          | Complevel | Name                |
-|----------------|---------------|-----------|---------------------|
-| `chex2.wad`    | `chex.wad`    | vanilla   | Chex Quest 2        |
-| `rekkr.wad`    | `doom.wad`    | vanilla   | REKKR               |
-| `rekbonus.wad` | `rekkrsl.wad` | vanilla   | REKKR: Bonus        |
-| `harmonyc.wad` | `doom2.wad`   | vanilla   | Harmony: Compatible |
+| File           | IWAD          | Complevel | Name                 |
+|----------------|---------------|-----------|----------------------|
+| `chex2.wad`    | `chex.wad`    | vanilla   | Chex Quest 2         |
+| `rekkr.wad`    | `doom.wad`    | vanilla   | REKKR                |
+| `rekbonus.wad` | `rekkrsl.wad` | vanilla   | REKKR: Bonus Episode |
+| `harmonyc.wad` | `doom2.wad`   | vanilla   | Harmony: Compatible  |
 
 ### Legacy of Rust modding reference
 
@@ -62,6 +62,8 @@ export DOOMWADPATH="/usr/local/share/games/doom:/usr/local/share/doom:/usr/share
 |--------------------|-------------|-----------|---------------------------------------|
 | `id1-res.wad`      | `doom2.wad` | mbf21     | Legacy of Rust - Base Resources       |
 | `id1-weap.wad`     | `doom2.wad` | mbf21     | Legacy of Rust - Weapons Replacements |
+| `id1-tex.wad`      | `doom2.wad` | Any       | Legacy of Rust - Standalone Textures  |
+| `id1-mus.wad`      | `doom2.wad` | Any       | Legacy of Rust - Standalone Music     |
 
 ## Environment variables
 
@@ -102,7 +104,7 @@ export DOOMWADPATH="/usr/local/share/games/doom:/usr/local/share/doom:/usr/share
 | `$XDG_PICTURES_DIR/<capitalname>/` | Store screenshots and other in-game saved images in the data directory, under a sub-directory that matches you project's uppercase short name. |
 | `$XDG_VIDEOS_DIR/<capitalname>/`   | Store videos and other in-game recordings in the data directory, under a sub-directory that matches you project's uppercase short name. |
 | `$XDG_DATA_DIR/applications/`      | Store application's persistent `*.desktop` file in here. |
-| `$XDG_DATA_DIR/icons/hicolor/`     | Store application's icons, appropriately, under the `16x16/`, `32x32/`, `64x64/`, `128x128/` and etc, sub-directories. |
+| `$XDG_DATA_DIR/icons/hicolor/`     | Store application's icons, appropriately, under the `16x16/`, `32x32/`, `64x64/`, `128x128/` and etc, sub-directories. <br> All icons in each sub directory must have the same name, i.e `16x16/boom.png`, `32x32/boom.png` . |
 
 ### Doom
 
