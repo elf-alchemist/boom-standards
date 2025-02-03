@@ -44,7 +44,7 @@ Any JSON data handler encountering a version higher than expected must consider 
 |Name      |JSON Type|Description|
 |----------|---------|-----------|
 |`type`    |string   | The name of the type of data this lump contains. Used for verification purposes at engine runtime; used by editors to determine how to handle the lump. <br><br> This value must be lowercase; have one character minimum; and consist of letters, numbers, underscores, and dashes only. The regex string `^[a-z0-9_-]+$` should thus result in an exact match with the provided value.  |
-|`version` |string   | The version for the specified type. Expected to take the format of “\<major\>.\<minor\>.\<revision\>”. The regex string `^(\d+)\.(\d+)\.(\d+)$` should thus result in an exact match and three groups with the provided value.  |
+|`version` |string   | The version for the specified type. Expected to take the format of "\<major\>.\<minor\>.\<revision\>". The regex string `^(\d+)\.(\d+)\.(\d+)$` should thus result in an exact match and three groups with the provided value.  |
 |`metadata`|object   | A data field designed to be used by editors. Its existence must be verified at engine runtime; and its contents must be ignored at engine runtime.  |
 |`data`    |object   | The data representing the specified type. The format of this block is out of the scope of this document, and intended to be defined exclusively by any data formats wanting to base themselves on JSON. This object is thus used as the root node for any custom JSON data handler, any handlers as such must refer to the type of this object as root. Must not be null. |
 
@@ -56,7 +56,7 @@ Each field has no default value. Null is an acceptable default value for verific
 
 Any metadata block not containing all of the following entries must be considered invalid
 
-Any additional values not defined here are both valid and outside of the scope of this document, and are to be considered “implementation defined” for the purposes of this document.
+Any additional values not defined here are both valid and outside of the scope of this document, and are to be considered "implementation defined" for the purposes of this document.
 
 |Name         |JSON Type|Example                  |Description|
 |-------------|---------|-------------------------|-----------|

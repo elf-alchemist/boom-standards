@@ -4,7 +4,7 @@ Translations from one palette range to another have always been hardcoded into t
 
 ## JSON lump
 
-This specification uses the JSON Lump 1.0.0 formal specification as the root of its data storage, with a type of “`translation`” and a version of “`1.0.0`”.
+This specification uses the JSON Lump 1.0.0 formal specification as the root of its data storage, with a type of "`translation`" and a version of "`1.0.0`".
 
 ## The translation table
 

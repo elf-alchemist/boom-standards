@@ -8,7 +8,7 @@ This specification has been written to replicate the Doom and Doom II: Hell on E
 
 ## JSON lump
 
-This specification uses the JSON Lump 1.0.0 formal specification as the root of its data storage, with a type of “`statusbar`” and a version of “`1.0.0`”.
+This specification uses the JSON Lump 1.0.0 formal specification as the root of its data storage, with a type of "`statusbar`" and a version of "`1.0.0`".
 
 ## Only one lump
 
@@ -238,7 +238,7 @@ The hud mode has the following values:
 
 | Name        | Type    | Description |
 |-------------|---------|--------|
-| `condition` | enum    | The type of condition to resolve, as described by the table in the “Element conditions” section |
+| `condition` | enum    | The type of condition to resolve, as described by the table in the "Element conditions" section |
 | `param`     | integer | A parameter as described for each condition type. |
 
 ### graphic

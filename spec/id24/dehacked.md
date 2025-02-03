@@ -297,7 +297,7 @@ The original Doom disallowed selecting the fist weapon when a chainsaw was owned
 - If you are disallowed to select this weapon _and_ if **Allow switch with owned item** is defined and you own that item, you are allowed to select this weapon
 - If you are still allowed to select this weapon, select this weapon
 
-To resolve the above logic, the weapon index resolves via the weapon lookup table; and the item index resolves via the table described in “Pickup item type”.
+To resolve the above logic, the weapon index resolves via the weapon lookup table; and the item index resolves via the table described in "Pickup item type".
 
 Note that `wp_nochange` must be redefined to -1 in code to be compliant with the above index range definitions.
 
@@ -310,7 +310,7 @@ Note that `wp_nochange` must be redefined to -1 in code to be compliant with the
 | `Switch Priority`                | integer | -1       | Priority value when autoswitching. |
 | `Initial Owned`                  | bool    | false    | Whether this weapon is available to the player on respawn. |
 | `Initial Raised`                 | bool    | false    | Whether this weapon is the one to be raised on respawn. |
-| `Carousel icon`                  | string  | “SMUNKN” | A patch to be used as a small icon for weapon selection wheels/carousels/etc. |
+| `Carousel icon`                  | string  | "SMUNKN" | A patch to be used as a small icon for weapon selection wheels/carousels/etc. |
 | `Allow switch with owned weapon` | integer | -1       | Allow weapon switching according to described logic. |
 | `No switch with owned weapon`    | integer | -1       | Disallow weapon switching according to described logic. |
 | `Allow switch with owned item`   | integer | -1       | Allow weapon switching according to described logic. |

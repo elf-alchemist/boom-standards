@@ -8,7 +8,7 @@ This specification uses the JSON Lump 1.0.0 formal specification as the root of 
 
 ## Resolving DEMOLOOP lumps
 
-Only one `DEMOLOOP` lump is to be parsed, using the name “DEMOLOOP” to resolve the lump from the WAD dictionary in the standard manner (ie the last one encountered is the one resolved).
+Only one `DEMOLOOP` lump is to be parsed, using the name "DEMOLOOP" to resolve the lump from the WAD dictionary in the standard manner (ie the last one encountered is the one resolved).
 
 When a `DEMOLOOP` lump is not found, it is expected that the behavior of the demo loop revert to that of the Vanilla behavior and change the loop according to what IWAD is loaded and what game mode the engine is in.
 

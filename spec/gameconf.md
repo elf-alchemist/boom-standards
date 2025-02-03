@@ -4,7 +4,7 @@ While there are ways to define how a Doom mod should be set up, a way of explici
 
 ## JSON lump
 
-This specification uses the JSON Lump 1.0.0 formal specification as the root of its data storage, with a type of “`gameconf`” and a version of “`1.0.0`”.
+This specification uses the JSON Lump 1.0.0 formal specification as the root of its data storage, with a type of "`gameconf`" and a version of "`1.0.0`".
 
 ## Resolving GAMECONF lumps
 
@@ -43,7 +43,7 @@ The three modes supported, from lowest value to highest, are:
 - `retail` - Ultimate Doom with 4 episodes
 - `commercial` - Doom II with maps 1-32 and all additional enemies and items
 
-Note that while `shareware` is a supported mode inside the Doom source code, this is only a valid method for the original distribution model of shareware Doom. Mod authors can tailor a “demo” version of their mods in a far more flexible fashion with modern tools and features. As such, encountering `shareware` or any other value not defined above is to be considered an error condition.
+Note that while `shareware` is a supported mode inside the Doom source code, this is only a valid method for the original distribution model of shareware Doom. Mod authors can tailor a "demo" version of their mods in a far more flexible fashion with modern tools and features. As such, encountering `shareware` or any other value not defined above is to be considered an error condition.
 
 ## Options
 
@@ -157,6 +157,6 @@ The flow for how a session is set up at a feature and a data level is as follows
 
 In the case of linedef specials, while it is well defined which line special belongs to which standard the Boom line special number 85 - which is undefined in Vanilla - is treated as limit removing. Some mapsets that were authored to be Vanilla-compatible in the 90s and early 00s used this special to improve the presentation in Boom-compatible ports, and the autodetect path incorrectly elevates the feature level to Boom thanks to this one linedef. As it is a texture scroller and has no impact on the simulation, it is considered a limit-removing line.
 
-In the case of thing flags, the Boom “not in deathmatch” and “not in coop” flags are not tested for similar reasons as the linedef special number 85.
+In the case of thing flags, the Boom "not in deathmatch" and "not in coop" flags are not tested for similar reasons as the linedef special number 85.
 
 The MBF reserved thing flag is respected and limits thing flag checks to those defined in Vanilla if encountered. A similar flag (0x0800, 2048, 1 << 11) is used for linedef flags for the same justifications provided in the MBF specification for thing flags.

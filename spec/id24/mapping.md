@@ -5,7 +5,7 @@
 The ID24 map additions are a superset of the following specifications:
 
 - All original Doom map features
-- All Boom map features (including generalized line and sector specials)
+- All Boom map features
 - All MBF map features
 - All MBF21 map features
 
@@ -30,7 +30,7 @@ Further, the line specials used by ZokumBSP are respected and reserved for use b
 
 UMAPINFO defines the `bossaction` field as a way to activate a line special when all boss monsters of the specified type are killed. It uses a string mnemonic to resolve the type. This was reasonable when it was not possible to have four billion+ different types. As such, `bossaction` now allows you to specify the thing number as defined by DeHackEd in place of a string mnemonic.
 
-Further, `bossactionednum` has been added which differs from `bossaction` by resolving a thing’s editor number instead of the thing number directly. The boss actions internally still use the usual thing type values, and as such this field must resolve a valid thing from the editor number to be able to function correctly.
+Further, `bossactionednum` has been added which differs from `bossaction` by resolving a thing's editor number instead of the thing number directly. The boss actions internally still use the usual thing type values, and as such this field must resolve a valid thing from the editor number to be able to function correctly.
 
 ### Any texture and flat can be used on any surface
 
@@ -42,7 +42,7 @@ For the purposes of rendering a transparent texture on a solid surface, transpar
 
 ### Floor and ceiling texture transformations
 
-There are now line specials to offset floor and ceiling textures, similar to how wall textures are offset. The line special’s X and Y direction are treated as the offset values. Offsets are always applied assuming the floor/ceiling is rendering from the origin (0, 0).
+There are now line specials to offset floor and ceiling textures, similar to how wall textures are offset. The line special's X and Y direction are treated as the offset values. Offsets are always applied assuming the floor/ceiling is rendering from the origin (0, 0).
 
 Rotation is also capable of being applied to floor and ceiling textures. As per offsets, the rotation is defined by the angle of the line and applied as if the floor/ceiling is rendering from the origin (0, 0).
 
@@ -50,27 +50,27 @@ Lines that combine offset and rotation effects perform the offset first and then
 
 ### Music changing
 
-The new music line specials mean that you no longer are required to use MUSINFO to change the current music track playing. The new specials affect the activating thing’s player, and unlike the small delay when using MUSINFO the music change is immediate.
+The new music line specials mean that you no longer are required to use MUSINFO to change the current music track playing. The new specials affect the activating thing's player, and unlike the small delay when using MUSINFO the music change is immediate.
 
 To define the music tracks used by the line specials, you set the upper texture to the wanted lump name of the music track when activating the line from the front side; and the lower texture when activating from the back side.
 
-The “play once” variants of the specials use the vanilla behavior for play once, ie once the music track finishes make no attempt to loop the track nor switch tracks to another.
+The "play once" variants of the specials use the vanilla behavior for play once, ie once the music track finishes make no attempt to loop the track nor switch tracks to another.
 
 If a lump is not found with the provided name, no music change occurs.
 
-If the upper/lower textures are not set, no music change occurs. The exception is when using the “reset” class of lines, which reverts to the level’s default looping music when activated.
+If the upper/lower textures are not set, no music change occurs. The exception is when using the "reset" class of lines, which reverts to the level's default looping music when activated.
 
 ### Reset exits
 
-Lines are provided that reset the player’s inventory after exiting a map. This removes the requirements for death exits to do such things; and also allows a cleaner way of handling such setups as Eviternity's secret maps rewarding the player with not resetting their inventory on entering MAP16 (ie place the reset exit on MAP15 and the flow is preserved naturally since the reset happens at map end instead of map start).
+Lines are provided that reset the player's inventory after exiting a map. This removes the requirements for death exits to do such things; and also allows a cleaner way of handling such setups as Eviternity's secret maps rewarding the player with not resetting their inventory on entering MAP16 (ie place the reset exit on MAP15 and the flow is preserved naturally since the reset happens at map end instead of map start).
 
 ### Sector tinting
 
-Sectors can now have colormaps applied directly to them without needing to use Boom’s property transfer line specials. It is also entirely possible to do this dynamically thanks to interactive line special types. When defining the colormap, you set the upper texture to the wanted lump name of the colormap when using the static special or when activating the line from the front side; and the lower texture when activating from the back side.
+Sectors can now have colormaps applied directly to them without needing to use Boom's property transfer line specials. It is also entirely possible to do this dynamically thanks to interactive line special types. When defining the colormap, you set the upper texture to the wanted lump name of the colormap when using the static special or when activating the line from the front side; and the lower texture when activating from the back side.
 
-If a lump is not found with the provided name, or if the upper/lower textures are not set, the sector’s colormap is cleared and it uses the current default colormap (as set with the property transfer zone you are in).
+If a lump is not found with the provided name, or if the upper/lower textures are not set, the sector's colormap is cleared and it uses the current default colormap (as set with the property transfer zone you are in).
 
-When a sector’s colormap is set this way, it entirely overrides the default colormap (including property transfers, excluding powerups).
+When a sector's colormap is set this way, it entirely overrides the default colormap (including property transfers, excluding powerups).
 
 ### Scrolling textures
 
@@ -107,18 +107,18 @@ New special types have been added to scroll both the front and the back sidedefs
 | 2072  | W1      | Exit to the secret map and reset inventory. |
 | 2073  | S1      | Exit to the secret map and reset inventory. |
 | 2074  | G1      | Exit to the secret map and reset inventory. |
-| 2075  | Always  | Set the target sector’s colormap. |
-| 2076  | W1      | Set the target sector’s colormap. |
-| 2077  | WR      | Set the target sector’s colormap. |
-| 2078  | S1      | Set the target sector’s colormap. |
-| 2079  | SR      | Set the target sector’s colormap. |
-| 2080  | G1      | Set the target sector’s colormap. |
-| 2081  | GR      | Set the target sector’s colormap. |
-| 2082  | Always  | Scroll both front and back sidedef’s textures according to the line’s left direction. |
-| 2083  | Always  | Scroll both front and back sidedef’s textures according to the line’s right direction. |
-| 2084  | Always  | Scroll both front and back sidedef’s textures according the target sector’s scroll values divided by 8. |
-| 2085  | Always  | Scroll both front and back sidedef’s textures according the target sector’s movement divided by 8. |
-| 2086  | Always  | Scroll both front and back sidedef’s textures and accelerate the scroll value by the target sector’s movement divided by 8. |
+| 2075  | Always  | Set the target sector's colormap. |
+| 2076  | W1      | Set the target sector's colormap. |
+| 2077  | WR      | Set the target sector's colormap. |
+| 2078  | S1      | Set the target sector's colormap. |
+| 2079  | SR      | Set the target sector's colormap. |
+| 2080  | G1      | Set the target sector's colormap. |
+| 2081  | GR      | Set the target sector's colormap. |
+| 2082  | Always  | Scroll both front and back sidedef's textures according to the line's left direction. |
+| 2083  | Always  | Scroll both front and back sidedef's textures according to the line's right direction. |
+| 2084  | Always  | Scroll both front and back sidedef's textures according the target sector's scroll values divided by 8. |
+| 2085  | Always  | Scroll both front and back sidedef's textures according the target sector's movement divided by 8. |
+| 2086  | Always  | Scroll both front and back sidedef's textures and accelerate the scroll value by the target sector's movement divided by 8. |
 | 2087  | W1      | Change music and make it loop, reset to looping default if no track defined. |
 | 2088  | WR      | Change music and make it loop, reset to looping default if no track defined. |
 | 2089  | S1      | Change music and make it loop, reset to looping default if no track defined. |

@@ -26,8 +26,8 @@ For developers, the bespoke format defines the association of MUSINFO values, to
 
 ```txt
 <map label>
-<MUSINFO value> <music lump>
-[<MUSINFO value> <music lump>]
+<MUSINFO value><whitespace><music lump>
+[<MUSINFO value><whitespace><music lump>]
 [...]
 ```
 

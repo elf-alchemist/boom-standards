@@ -4,11 +4,11 @@ A way of defining custom skies without using transfer lines has not existed in m
 
 ## Scope of features
 
-This specification has been written to handle sky rendering as present in Doom and Doom II: Hell on Earth, as well as expanding the featureset to include Hexen layered skies and Playstation Doom/Doom 64 fire skies. Tall skies are not handled by this specification, and until such time that any future revisions do any implementation (including the style used in Heretic) is to be considered “implementation defined” and not a part of any standard.
+This specification has been written to handle sky rendering as present in Doom and Doom II: Hell on Earth, as well as expanding the featureset to include Hexen layered skies and Playstation Doom/Doom 64 fire skies. Tall skies are not handled by this specification, and until such time that any future revisions do any implementation (including the style used in Heretic) is to be considered "implementation defined" and not a part of any standard.
 
 ## JSON lump
 
-This specification uses the JSON Lump 1.0.0 formal specification as the root of its data storage, with a type of “`skydefs`” and a version of “`1.0.0`”.
+This specification uses the JSON Lump 1.0.0 formal specification as the root of its data storage, with a type of "`skydefs`" and a version of "`1.0.0`".
 
 ## Only one lump
 

@@ -33,7 +33,7 @@ This specification uses the JSON Lump 1.0.0 formal specification as the root of 
 
 ## Terminology
 
-While the code uses “intermission” to mean the victory screens (ie exiting level tallies and entering level text/”you are here” display) and “finale” to refer to both the end-of-episode text and graphics displayed, community standards have come to term the end-of-episode text as “intermission”. As such, rather than reappropriating the term to match source code the victory screens will now exclusively be referred to as `interlevel` screens. Any terminology that uses `interlevel` refers to this point in the gamesim.
+While the code uses "intermission" to mean the victory screens (ie exiting level tallies and entering level text/"you are here" display) and "finale" to refer to both the end-of-episode text and graphics displayed, community standards have come to term the end-of-episode text as "intermission". As such, rather than reappropriating the term to match source code the victory screens will now exclusively be referred to as `interlevel` screens. Any terminology that uses `interlevel` refers to this point in the gamesim.
 
 ## UMAPINFO additions
 
@@ -42,7 +42,7 @@ UMAPINFO previously provided the `exitpic` and `enterpic` lumps to define the ba
 | Name        | Type   | Description |
 |-------------|--------|-------------|
 | `exitanim`  | string | An `interlevel` background lump used for the score tally screen |
-| `enteranim` | string | An `interlevel` background lump used for the “entering” screen |
+| `enteranim` | string | An `interlevel` background lump used for the "entering" screen |
 
 These lumps are considered authoritative and override any exitpic and enterpic definitions. Content authors are however encouraged to fill out both fields for ports that lack an implementation for this specification. If an `exitanim` or `enteranim`’s target lump is not correctly formed, this is considered an error condition. Falling back on `exitpic` and `enterpic` in the event of an error is not allowed and is considered a non-compliant implementation of this spec.
 
@@ -66,7 +66,7 @@ The map number accessible for condition checking is dependent on whether the vic
 
 - Any value that uses a random number generator (RNG) is not guaranteed to give the same results on every instantiation.
   - Using `M_Random` from the Doom codebase satisfies this requirement.
-- Time durations are not considered to be exact; however, implementations are expected to give “as close as feasible” results.
+- Time durations are not considered to be exact; however, implementations are expected to give "as close as feasible" results.
   - Rounding to the nearest tic satisfies this requirement.
 
 ## Data types
@@ -166,7 +166,7 @@ When zero `conditions` are declared in a `condition array`, the `condition array
 
 | Name         | Type                 | Description |
 |--------------|----------------------|-------------|
-| `condition`  | integer              | Enumeration with the following values: <br> <li> 0: None <br> <li> 1: Current map number is greater than the param value <br> <li> 2: Current map number is equal to the param value <br> <li> 3: The map number corresponding to the param value has been visited <br> <li> 4: The current map is not a secret map <br> <li> 5: Any secret map has been visited <br> <li> 6: The current screen is the tally screen <br> <li> 7: The current screen is the “entering” screen <br> This enumeration determines the test that will be run when the parent object is instantiated. |
+| `condition`  | integer              | Enumeration with the following values: <br> <li> 0: None <br> <li> 1: Current map number is greater than the param value <br> <li> 2: Current map number is equal to the param value <br> <li> 3: The map number corresponding to the param value has been visited <br> <li> 4: The current map is not a secret map <br> <li> 5: Any secret map has been visited <br> <li> 6: The current screen is the tally screen <br> <li> 7: The current screen is the "entering" screen <br> This enumeration determines the test that will be run when the parent object is instantiated. |
 | `param`      | integer              | A value that this condition checks against, as defined in the `condition` field. |
 
 ### Reference implementation details
@@ -191,7 +191,7 @@ There is one additional condition used in the reference implementation:
 
 - Whether this element fits within the virtual space, and is the first element of the group specified by `param` to do so
 
-This is used exclusively as a shortcut for the hardcoded tables to handle the “You are here” pointer graphics in Doom episodes 1 through 3. Rather than painstakingly code each separate element, this shortcut means it can intelligently decide whether to use the left-pointing or right-pointing element. The implementation code however probably breaks for anything outside of this specific usecase. It is also made entirely redundant by layout tools. Do not attempt to copy the implementation or the condition, as it is precisely the kind of esoteric “implementation specific” feature that should be left entirely out of the collective consciousness.
+This is used exclusively as a shortcut for the hardcoded tables to handle the "You are here" pointer graphics in Doom episodes 1 through 3. Rather than painstakingly code each separate element, this shortcut means it can intelligently decide whether to use the left-pointing or right-pointing element. The implementation code however probably breaks for anything outside of this specific usecase. It is also made entirely redundant by layout tools. Do not attempt to copy the implementation or the condition, as it is precisely the kind of esoteric "implementation specific" feature that should be left entirely out of the collective consciousness.
 
 ### Durations
 
