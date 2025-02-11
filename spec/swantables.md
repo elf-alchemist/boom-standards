@@ -10,21 +10,21 @@ The following is the format for the `SWANTBLS` lump to be used to compile the `S
 
 ```
 [SWITCHES]
-<mode><whitespace><texture><whitespace><texture><newline>
-<mode><whitespace><texture><whitespace><texture><newline>
-<mode><whitespace><texture><whitespace><texture><newline>
+<mode> <texture> <texture>
+<mode> <texture> <texture>
+<mode> <texture> <texture>
 ...
 
 [FLATS]
-<duration><whitespace><flat><whitespace><flat><newline>
-<duration><whitespace><flat><whitespace><flat><newline>
-<duration><whitespace><flat><whitespace><flat><newline>
+<duration> <flat> <flat>
+<duration> <flat> <flat>
+<duration> <flat> <flat>
 ...
 
 [TEXTURES]
-<duration><whitespace><texture><whitespace><texture><newline>
-<duration><whitespace><texture><whitespace><texture><newline>
-<duration><whitespace><texture><whitespace><texture><newline>
+<duration> <texture> <texture>
+<duration> <texture> <texture>
+<duration> <texture> <texture>
 ...
 ```
 
@@ -32,8 +32,6 @@ The syntax elements are as follows:
 
 | Keyword      | Type         | Description |
 |--------------|--------------|-------------|
-| `whitespace` | SP or HT     | Self explanatory, prefer spaces over tabs |
-| `newline`    | LF or CRLF   | Self explanatory. |
 | `mode`       | unsigned int | Enumerated entry, dictates the minimum game "mode" needed for that entry. <br><li> 1 Shareware. <br><li> 2 Registered / Retail. <br><li> 3 Commercial. |
 | `duration`   | unsigned int | Amount of time in game tics that each "frame" lasts for, 8 tics being the original vanilla value. |
 | `texture`    | lump name    | The name of the texture, as defined in the TEXTURE1/2 definitions. |
