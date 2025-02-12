@@ -10,16 +10,6 @@ This specification has been written to handle exactly what is required every fin
 
 This specification uses the JSON Lump 1.0.0 formal specification as the root of its data storage, with a type of **`finale`** and a version of **`1.0.0`**.
 
-## UMAPINFO additions
-
-UMAPINFO previously provided `endpic`, `endbunny`, and `endcast` fields to define that the episode should end and proceed to the finale screens. Rather than overload the meaning of this field, an additional field has been added:
-
-| Name        | Type   | Description |
-|-------------|--------|-------------|
-| `endfinale` | string | A `cast call` lump to be used for the cast call screen |
-
-`endfinale` is considered authoritative and the existing finale fields are ignored when `endfinale` is set. Ports that do not implement this specification are expected to ignore `endfinale`.
-
 ## Basic setup
 
 There are three types of finales that you can define:

@@ -26,12 +26,6 @@ Further, the line specials used by ZokumBSP are respected and reserved for use b
 - 1048
 - 1078 to 1086, inclusive
 
-### UMAPINFO additions
-
-UMAPINFO defines the `bossaction` field as a way to activate a line special when all boss monsters of the specified type are killed. It uses a string mnemonic to resolve the type. This was reasonable when it was not possible to have four billion+ different types. As such, `bossaction` now allows you to specify the thing number as defined by DeHackEd in place of a string mnemonic.
-
-Further, `bossactionednum` has been added which differs from `bossaction` by resolving a thing's editor number instead of the thing number directly. The boss actions internally still use the usual thing type values, and as such this field must resolve a valid thing from the editor number to be able to function correctly.
-
 ### Any texture and flat can be used on any surface
 
 ID24 allows both textures defined in TEXTURE1/2 and flats found between flat markers in the WAD directory to be rendered on any floor, ceiling, or wall.

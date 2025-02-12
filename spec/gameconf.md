@@ -135,25 +135,15 @@ The flow for how a session is set up at a feature and a data level is as follows
 - For each IWAD and PWAD obtained from the GAMECONF pass
   - Load the WAD directory
   - Search for and parse a DEHACKED lump
-- Load any available map info definitions in the following order of preference:
-  - UMAPINFO
-  - DMAPINFO
+- Load any available UMAPINFO definitions
 - Determine an authoritative session feature level by the maximum value encountered from the following checks
-  - Current gameconf declared level
+  - Current GAMECONF declared level
   - Feature level found in COMPLVL lump
 - If authoritative feature level is found and is lower than what is found in DeHackEd, this will produce undefined behavior and therefore is an error condition
-- If no authoritative feature level exists, employ the following heuristics to find the session feature level:
-  - DeHackEd maximum encountered features
-  - Feature level defined by DEMOx lumps
-  - Feature level of Boom 2.02 if ANIMATED, SWITCHES, C_BEGIN, or C_END lumps are found
-  - Feature level of Complevel 9 if MUSINFO lump is found
-  - For each map
-    - Maximum feature level of encountered line special, sector special, and thing encountered
 - Unload every WAD directory
 - Ensure all features required by the determined feature level are enabled or disabled according to spec
-- Load extras.wad
 - If ID24 feature level, load id24res.wad
-- Load each IWAD and PWAD defined by the current gameconf
+- Load each IWAD and PWAD defined by the current GAMECONF
 
 In the case of linedef specials, while it is well defined which line special belongs to which standard the Boom line special number 85 - which is undefined in Vanilla - is treated as limit removing. Some mapsets that were authored to be Vanilla-compatible in the 90s and early 00s used this special to improve the presentation in Boom-compatible ports, and the autodetect path incorrectly elevates the feature level to Boom thanks to this one linedef. As it is a texture scroller and has no impact on the simulation, it is considered a limit-removing line.
 

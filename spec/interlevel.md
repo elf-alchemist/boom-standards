@@ -35,19 +35,6 @@ This specification uses the JSON Lump 1.0.0 formal specification as the root of 
 
 While the code uses "intermission" to mean the victory screens (ie exiting level tallies and entering level text/"you are here" display) and "finale" to refer to both the end-of-episode text and graphics displayed, community standards have come to term the end-of-episode text as "intermission". As such, rather than reappropriating the term to match source code the victory screens will now exclusively be referred to as `interlevel` screens. Any terminology that uses `interlevel` refers to this point in the gamesim.
 
-## UMAPINFO additions
-
-UMAPINFO previously provided the `exitpic` and `enterpic` lumps to define the background of the `interlevel` screens. Rather than override the behavior of these values, this specification adds two additional fields to any compatible version of UMAPINFO:
-
-| Name        | Type   | Description |
-|-------------|--------|-------------|
-| `exitanim`  | string | An `interlevel` background lump used for the score tally screen |
-| `enteranim` | string | An `interlevel` background lump used for the "entering" screen |
-
-These lumps are considered authoritative and override any exitpic and enterpic definitions. Content authors are however encouraged to fill out both fields for ports that lack an implementation for this specification. If an `exitanim` or `enteranim`’s target lump is not correctly formed, this is considered an error condition. Falling back on `exitpic` and `enterpic` in the event of an error is not allowed and is considered a non-compliant implementation of this spec.
-
-Ports that do not implement this specification are expected to ignore `exitanim` and `enteranim` and present `exitpic` and `enterpic` as normal.
-
 ## Runtime environment
 
 The `interlevel` backgrounds are to be rendered in a virtual 320x200 resolution (referred to as the virtual environment, presented at a 4:3 aspect ratio with rectangular pixels at a 1:1.2 aspect ratio (ie 1.2 vertical units are required to maintain the 4:3 aspect ratio). This is identical to the original Doom and Doom II presentation. The virtual resolution is enforced to allow equivalent presentations at any actual device output resolutions.
