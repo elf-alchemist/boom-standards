@@ -1,5 +1,9 @@
-# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux
+# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux,libreoffice
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux,libreoffice
+
+### LibreOffice ###
+# LibreOffice locks
+.~lock.*#
 
 ### Linux ###
 *~
@@ -75,6 +79,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux
+# End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,libreoffice
 
 .vscode/
