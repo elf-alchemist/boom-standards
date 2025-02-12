@@ -45,20 +45,6 @@ The three modes supported, from lowest value to highest, are:
 
 Note that while `shareware` is a supported mode inside the Doom source code, this is only a valid method for the original distribution model of shareware Doom. Mod authors can tailor a "demo" version of their mods in a far more flexible fashion with modern tools and features. As such, encountering `shareware` or any other value not defined above is to be considered an error condition.
 
-## Options
-
-The existence of the OPTIONS lump outright indicates an `mbf`-minimum featureset. However, there are a few compatibility options that you will want to configure for lesser feature sets. The options field serves this purpose, by allowing you to set compatibility options that satisfy the minimum feature set requirement.
-
-All normal options configurable by the OPTIONS lump are available to the user. The options you are allowed to set are limited by the version the user specifies. If an option is declared that exists outside of the defined version, it is ignored.
-
-As options are additive, they will accumulate for each encountered GAMECONF lump and will always resolve in that order.
-
-Options defined by the MBF standard are limited to MBF-minimum versions; while options defined by the MBF21 standard are limited to MBF21-minimum versions. The following exceptions apply:
-
-
-
-Note that all new options described above can also be parsed by the OPTIONS lump.
-
 ## IWADs
 
 IWADs defined on the command line, or determined by the engine, are to be considered default values. If any GAMECONF lump encountered defines a different IWAD, it will overwrite this default and that original IWAD will not be loaded by the game. This must be the name of a file without any additional path info. Defining a path, be it relative or absolute, is considered an error condition.
@@ -144,9 +130,3 @@ The flow for how a session is set up at a feature and a data level is as follows
 - Ensure all features required by the determined feature level are enabled or disabled according to spec
 - If ID24 feature level, load id24res.wad
 - Load each IWAD and PWAD defined by the current GAMECONF
-
-In the case of linedef specials, while it is well defined which line special belongs to which standard the Boom line special number 85 - which is undefined in Vanilla - is treated as limit removing. Some mapsets that were authored to be Vanilla-compatible in the 90s and early 00s used this special to improve the presentation in Boom-compatible ports, and the autodetect path incorrectly elevates the feature level to Boom thanks to this one linedef. As it is a texture scroller and has no impact on the simulation, it is considered a limit-removing line.
-
-In the case of thing flags, the Boom "not in deathmatch" and "not in coop" flags are not tested for similar reasons as the linedef special number 85.
-
-The MBF reserved thing flag is respected and limits thing flag checks to those defined in Vanilla if encountered. A similar flag (0x0800, 2048, 1 << 11) is used for linedef flags for the same justifications provided in the MBF specification for thing flags.
