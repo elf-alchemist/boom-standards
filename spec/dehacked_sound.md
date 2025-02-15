@@ -126,6 +126,47 @@
 
 | Index | SFX    | Lump     | Singularity | Priority | Description |
 |-------|--------|----------|-------------|----------|-------------|
+| ????? | banact | DSBANACT | None        |      127 | Banshee sighting and active. |
+| ????? | bandth | DSBANDTH | None        |      127 | Banshee dying. |
+| ????? | banpai | DSBANPAI | None        |      127 | Banshee in pain. |
+| ????? | break  | DSBREAK  | None        |      127 | Office lamp breaking. |
+| ????? | cspact | DSCSPACT | None        |      127 | Mindweaver active. |
+| ????? | cspdth | DSCSPDTH | None        |      127 | Mindweaver dying. |
+| ????? | cspsit | DSCSPSIT | None        |      127 | Mindweaver sighting. |
+| ????? | cspwlk | DSCSPWLK | None        |      127 | Mindweaver chasing. |
+| ????? | gatcls | DSGATCLS | None        |      127 | Ambient Portal closing. |
+| ????? | gatlop | DSGATLOP | None        |      127 | Ambient Portal looping. |
+| ????? | gatopn | DSGATOPN | None        |      127 | Ambient Portal opening. |
+| ????? | ghlact | DSGHLACT | None        |      127 | Ghoul active. |
+| ????? | ghldt2 | DSGHLDT2 | None        |      127 | Ghoul dying, unused alternative. |
+| ????? | ghldth | DSGHLDTH | None        |      127 | Ghoul dying. |
+| ????? | ghlpai | DSGHLPAI | None        |      127 | Ghoul in pain. |
+| ????? | ghlsit | DSGHLSIT | None        |      127 | Ghoul sighting. |
+| ????? | hetchg | DSHETCHG | None        |      127 | Calamity Blade / Heatwave Generator charging. |
+| ????? | hetsht | DSHETSHT | None        |      127 | Calamity Blade / Heatwave Generator shot. |
+| ????? | hetxpl | DSHETXPL | None        |      127 | Calamity Blade / Heatwave Generator explode. |
+| ????? | incbrn | DSINCBRN | None        |      127 | Incinerator / Flamethrower burning. |
+| ????? | incfi1 | DSINCFI1 | None        |      127 | Incinerator / Flamethrower fire #1. |
+| ????? | incfi2 | DSINCFI2 | None        |      127 | Incinerator / Flamethrower fire #2. |
+| ????? | incht1 | DSINCHT1 | None        |      127 | Incinerator / Flamethrower crackle #1. |
+| ????? | incht2 | DSINCHT2 | None        |      127 | Incinerator / Flamethrower crackle #2. |
+| ????? | incht3 | DSINCHT3 | None        |      127 | Incinerator / Flamethrower crackle #3. |
+| ????? | klaxon | DSKLAXON | None        |      127 | Ambient Klaxon. |
+| ????? | ppoact | DSPPOACT | None        |      127 | Shocktrooper active. |
+| ????? | ppodth | DSPPODTH | None        |      127 | Shocktrooper death. |
+| ????? | ppohed | DSPPOHED | None        |      127 | Shocktrooper head falling. |
+| ????? | ppopai | DSPPOPAI | None        |      127 | Shocktrooper in pain. |
+| ????? | tyrdth | DSTYRDTH | None        |      127 | Tyrant dying. |
+| ????? | tyrsit | DSTYRSIT | None        |      127 | Tyrant sighting. |
+| ????? | tyrwlk | DSTYRWLK | None        |      127 | Tyrant chasing. |
+| ????? | vasact | DSVASACT | None        |      127 | Vassago active. |
+| ????? | vasatk | DSVASATK | None        |      127 | Vassago attacking. |
+| ????? | vasdth | DSVASDTH | None        |      127 | Vassago dying. |
+| ????? | vaspai | DSVASPAI | None        |      127 | Vassago in pain. |
+| ????? | vassit | DSVASSIT | None        |      127 | Vassago sighting. |
+
+| Index | SFX    | Lump     | Singularity | Priority | Description |
+|-------|--------|----------|-------------|----------|-------------|
 | 34    | oof    | DSOOF    | Oof         |       96 | Player falling great height on solid terrain. |
 | 115   | splash | DSSPLASH | Oof         |       96 | Player falling great height on watery terrain. |
 | 116   | ploosh | DSPLOOSH | Oof         |       96 | Player falling great height on slime/nukage terrain. |
@@ -137,25 +178,25 @@
 
 | Index | SFX    | Lump     | Singularity | Priority | Description |
 |-------|--------|----------|-------------|----------|-------------|
-| 500   | fre000 | DSFRE000 | None        |      127 | Extended DeHeackEd extra sound #0.   |
-| 501   | fre001 | DSFRE001 | None        |      127 | Extended DeHeackEd extra sound #1.   |
-| 502   | fre002 | DSFRE002 | None        |      127 | Extended DeHeackEd extra sound #2.   |
-| 503   | fre003 | DSFRE003 | None        |      127 | Extended DeHeackEd extra sound #3.   |
-| 504   | fre004 | DSFRE004 | None        |      127 | Extended DeHeackEd extra sound #4.   |
-| 505   | fre005 | DSFRE005 | None        |      127 | Extended DeHeackEd extra sound #5.   |
-| 506   | fre006 | DSFRE006 | None        |      127 | Extended DeHeackEd extra sound #6.   |
-| 507   | fre007 | DSFRE007 | None        |      127 | Extended DeHeackEd extra sound #7.   |
-| 508   | fre008 | DSFRE008 | None        |      127 | Extended DeHeackEd extra sound #8.   |
-| 509   | fre009 | DSFRE009 | None        |      127 | Extended DeHeackEd extra sound #9.   |
-| [...] | [...]  | [...]    | [...]       |    [...] | [...]                                |
-| 690   | fre190 | DSFRE190 | None        |      127 | Extended DeHeackEd extra sound #190. |
-| 691   | fre191 | DSFRE191 | None        |      127 | Extended DeHeackEd extra sound #191. |
-| 692   | fre192 | DSFRE192 | None        |      127 | Extended DeHeackEd extra sound #192. |
-| 693   | fre193 | DSFRE193 | None        |      127 | Extended DeHeackEd extra sound #193. |
-| 694   | fre194 | DSFRE194 | None        |      127 | Extended DeHeackEd extra sound #194. |
-| 695   | fre195 | DSFRE195 | None        |      127 | Extended DeHeackEd extra sound #195. |
-| 696   | fre196 | DSFRE196 | None        |      127 | Extended DeHeackEd extra sound #196. |
-| 697   | fre197 | DSFRE197 | None        |      127 | Extended DeHeackEd extra sound #197. |
-| 698   | fre198 | DSFRE198 | None        |      127 | Extended DeHeackEd extra sound #198. |
-| 699   | fre199 | DSFRE199 | None        |      127 | Extended DeHeackEd extra sound #199. |
+| 500   | fre000 | DSFRE000 | None        |      127 | Extended DeHackEd extra sound #0.   |
+| 501   | fre001 | DSFRE001 | None        |      127 | Extended DeHackEd extra sound #1.   |
+| 502   | fre002 | DSFRE002 | None        |      127 | Extended DeHackEd extra sound #2.   |
+| 503   | fre003 | DSFRE003 | None        |      127 | Extended DeHackEd extra sound #3.   |
+| 504   | fre004 | DSFRE004 | None        |      127 | Extended DeHackEd extra sound #4.   |
+| 505   | fre005 | DSFRE005 | None        |      127 | Extended DeHackEd extra sound #5.   |
+| 506   | fre006 | DSFRE006 | None        |      127 | Extended DeHackEd extra sound #6.   |
+| 507   | fre007 | DSFRE007 | None        |      127 | Extended DeHackEd extra sound #7.   |
+| 508   | fre008 | DSFRE008 | None        |      127 | Extended DeHackEd extra sound #8.   |
+| 509   | fre009 | DSFRE009 | None        |      127 | Extended DeHackEd extra sound #9.   |
+| [...] | [...]  | [...]    | [...]       |    [...] | [...]                               |
+| 690   | fre190 | DSFRE190 | None        |      127 | Extended DeHackEd extra sound #190. |
+| 691   | fre191 | DSFRE191 | None        |      127 | Extended DeHackEd extra sound #191. |
+| 692   | fre192 | DSFRE192 | None        |      127 | Extended DeHackEd extra sound #192. |
+| 693   | fre193 | DSFRE193 | None        |      127 | Extended DeHackEd extra sound #193. |
+| 694   | fre194 | DSFRE194 | None        |      127 | Extended DeHackEd extra sound #194. |
+| 695   | fre195 | DSFRE195 | None        |      127 | Extended DeHackEd extra sound #195. |
+| 696   | fre196 | DSFRE196 | None        |      127 | Extended DeHackEd extra sound #196. |
+| 697   | fre197 | DSFRE197 | None        |      127 | Extended DeHackEd extra sound #197. |
+| 698   | fre198 | DSFRE198 | None        |      127 | Extended DeHackEd extra sound #198. |
+| 699   | fre199 | DSFRE199 | None        |      127 | Extended DeHackEd extra sound #199. |
 
