@@ -47,28 +47,28 @@ Special thanks goes out to the creators of the following pieces of documentation
 
 Boom 2.02  
 Created by Jim Flynn, Stan Gula, Ty Halderman, Lee Killough, Rand Phares  
-Files: `third_party/boomref.txt`  
+Files: [`third_party/boomref.txt`](third_party/boomref.txt)  
 
 MBF 2.03  
 Created by Lee Killough  
-Files: `third_party/mbfedit.txt`  
+Files: [`third_party/mbfedit.txt`](third_party/mbfedit.txt)  
 
 UDMF 1.0  
 Created by James "Quasar" Haily, et al  
-Files: `third_party/udmf10.txt`  
+Files: [`third_party/udmf10.txt`](third_party/udmf10.txt)  
 
 UMAPINFO  
 Created by Graf Zahl, et al  
-Files: `third_party/umapinfo_rev2_2/**`  
+Files: [`third_party/umapinfo_rev2_2/**`](third_party/umapinfo_rev2_2/)  
 
 MBF21  
 Created by XaserAcheron, Kraflab, et al  
-Files: `third_party/mbf21/**`  
+Files: [`third_party/mbf21/**`](third_party/mbf21/)  
 
 DSDHackEd  
 Created by Kraflab  
-Files: `third_party/dsdhacked.txt`  
+Files: [`third_party/dsdhacked.md`](third_party/dsdhacked.md)  
 
 ID24  
 Created by Ethan Watson  
-Files: `third_party/dsdhacked.txt`  
+Files: [`third_party/id24/**`](third_party/id24/)  
