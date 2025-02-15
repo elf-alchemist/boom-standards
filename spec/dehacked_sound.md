@@ -1,8 +1,16 @@
 # SFX
 
+| Index | Singularity | Internal  |
+|-------|-------------|-----------|
+| 0     | None        | sg_none   |
+| 1     | ItemUp      | sg_itemup |
+| 2     | WeaponUp    | sg_wpnup  |
+| 3     | Oof         | sg_oof    |
+| 4     | GetPow      | sg_getpow |
+
 | Index | SFX    | Lump     | Singularity | Priority | Description |
 |-------|--------|----------|-------------|----------|-------------|
-| 0     | none   | DSNONE   | None        |       64 | Nothing. Dummy index. |
+| 0     | none   | N/A      | None        |       64 | Nothing. Dummy index. |
 | 1     | pistol | DSPISTOL | None        |       64 | Pistol shot. |
 | 2     | shotgn | DSSHOTGN | None        |       64 | Shotgun shot. |
 | 3     | sgcock | DSSGCOCK | None        |       64 | Shotgun cocking. Entering level. |
@@ -34,8 +42,8 @@
 | 29    | mnpain | DSMNPAIN | None        |       96 | Mancubus in pain. |
 | 30    | pepain | DSPEPAIN | None        |       96 | Pain Elemental in pain. |
 | 31    | slop   | DSSLOP   | None        |       78 | Gibbing death. |
-| 32    | itemup | DSITEMUP | None        |       78 | Item picked up. |
-| 33    | wpnup  | DSWPNUP  | None        |       78 | Weapon picked up. |
+| 32    | itemup | DSITEMUP | ItemUp      |       78 | Item picked up. |
+| 33    | wpnup  | DSWPNUP  | WeaponUp    |       78 | Weapon picked up. |
 | 34    | oof    | DSOOF    | Oof         |       96 | Player falling grunt. |
 | 35    | telept | DSTELEPT | None        |       32 | Teleport. |
 | 36    | posit1 | DSPOSIT1 | None        |       98 | Zombie sighting #1. |
@@ -171,7 +179,7 @@
 | 115   | splash | DSSPLASH | Oof         |       96 | Player falling great height on watery terrain. |
 | 116   | ploosh | DSPLOOSH | Oof         |       96 | Player falling great height on slime/nukage terrain. |
 | 117   | lvsiz  | DSLVSIZ  | Oof         |       96 | Player falling great height on lava terrain. |
-| 0     | none   | DSNONE   | Oof         |       96 | Player falling short height on solid terrain. |
+| 0     | none   | N/A      | Oof         |       96 | Player falling short height on solid terrain. |
 | 118   | plsml  | DSSPLSML | Oof         |       96 | Player falling short height on watery terrain. |
 | 119   | plosml | DSPLOSML | Oof         |       96 | Player falling short height on slime/nukage terrain. |
 | 120   | lavsml | DSLAVSML | Oof         |       96 | Player falling short height on lava terrain. |
