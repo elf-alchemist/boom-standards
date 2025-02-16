@@ -37,6 +37,7 @@
 | comp_vile              | boolean       | Arch-vile resurrecting crushed corpses creates ghosts. |
 | comp_zerotags          | boolean       | Allow actions on tag 0 sectors. |
 | comp_zombie            | boolean       | Allow player corpses to activate line actions. |
+| classic_bfg            | boolean       | Use old BFG2704. |
 | dog_jumping            | boolean       | Dogs can jump down from high ledges. |
 | friend_distance        | distance      | Friendly monsters try to keep at least this distance apart. |
 | help_friends           | boolean       | Friendly monsters prefer targets of friends. |
@@ -60,7 +61,6 @@
 | comp_voodooscroller    | boolean       | Voodoo dolls on slow scrollers move too slowly. |
 | translucency           | boolean       | Enable translucency effect. |
 | tran_filter_pct        | percentage    | Foreground/background translucency effect percentage. |
-| classic_bfg            | boolean       | Use old BFG2704. |
 | chatmacro0             | string        | Chat string associated with key 0.
 | chatmacro1             | string        | Chat string associated with key 1.
 | chatmacro2             | string        | Chat string associated with key 2.
@@ -147,6 +147,7 @@
 
 | MBF Options           | Vanilla[^2] | Boom[^2] | MBF | MBF21+ID24 |
 |-----------------------|-------------|----------|-----|------------|
+| classic_bfg           |           0 |        0 |   0 |          0 |
 | dog_jumping           |           0 |        0 |   1 |          1 |
 | friend_distance       |           0 |        0 | 128 |        128 |
 | help_friends          |           0 |        0 |   0 |          0 |
@@ -178,24 +179,22 @@
 
 [^4]: MBF21 de-optionalized some settings.
 
-| Misc                   | Vanilla | Boom | MBF | MBF21+ID24 |
-|------------------------|---------|------|-----|------------|
-| translucency           |       0 |    1 |   1 |          1 |
-| tran_filter_pct        |      66 |   66 |  66 |         66 |
-| classic_bfg            |       0 |    0 |   0 |          0 |
+| Cosmetics           | Default Value |
+|---------------------|---------------|
+| translucency[^5]    |             0 |
+| tran_filter_pct     |            66 |
+| sts_colored_numbers |             0 |
+| sts_pct_always_gray |             0 |
+| health_red          |            25 |
+| health_yellow       |            50 |
+| health_green        |           100 |
+| armor_red           |            25 |
+| armor_yellow        |            50 |
+| armor_green         |           100 |
+| ammo_red            |            25 |
+| ammo_yellow         |            50 |
 
-| Colored Status Bar         | Default Value |
-|----------------------------|---------------|
-| sts_colored_numbers        |             0 |
-| sts_pct_always_gray        |             0 |
-| health_red                 |            25 |
-| health_yellow              |            50 |
-| health_green               |           100 |
-| armor_red                  |            25 |
-| armor_yellow               |            50 |
-| armor_green                |           100 |
-| ammo_red                   |            25 |
-| ammo_yellow                |            50 |
+[^5]: Setting is turned Off by default in Vanilla, turned On by default starting with Boom.
 
 | Macros     | Default value              |
 |------------|----------------------------|
