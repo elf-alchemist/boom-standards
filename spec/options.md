@@ -1,4 +1,6 @@
-## OPTIONS Revision 1.2
+# OPTIONS Revision 1.2
+
+## Type Definitions
 
 | Type          | Possible values  |
 |---------------|------------------|
@@ -112,6 +114,8 @@
 | mapcolor_ply2          | palette index | Automap color for the gray player's arrow. |
 | mapcolor_ply3          | palette index | Automap color for the brown player's arrow. |
 | mapcolor_ply4          | palette index | Automap color for the red player's arrow. |
+
+## Options and flags, per-complevel
 
 | Vanilla Options        | Vanilla | Boom | MBF | MBF21+ID24[^4] |
 |------------------------|---------|------|-----|----------------|
