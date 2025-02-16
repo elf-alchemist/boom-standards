@@ -45,7 +45,6 @@ export DOOMWADPATH="/usr/local/share/games/doom:/usr/local/share/doom:/usr/share
 | `id24res.wad`      | Any         | id24      | ID24 Resources                |
 | `fd24res.wad`      | Any         | id24      | FreeDoom ID24 Resources       |
 | `extras.wad`       | Any         | Any       | Extras                        |
-| `fd-extras.wad`    | Any         | Any       | FreeDoom Extras               |
 
 ### Sideline PWADs
 
