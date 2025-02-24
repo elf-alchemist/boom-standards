@@ -175,14 +175,20 @@
 
 | Index | SFX    | Lump     | Singularity | Priority | Description |
 |-------|--------|----------|-------------|----------|-------------|
-| 34    | oof    | DSOOF    | Oof         |       96 | Player falling great height on solid terrain. |
-| 115   | splash | DSSPLASH | Oof         |       96 | Player falling great height on watery terrain. |
-| 116   | ploosh | DSPLOOSH | Oof         |       96 | Player falling great height on slime/nukage terrain. |
-| 117   | lvsiz  | DSLVSIZ  | Oof         |       96 | Player falling great height on lava terrain. |
-| 0     | none   | N/A      | Oof         |       96 | Player falling short height on solid terrain. |
-| 118   | plsml  | DSSPLSML | Oof         |       96 | Player falling short height on watery terrain. |
-| 119   | plosml | DSPLOSML | Oof         |       96 | Player falling short height on slime/nukage terrain. |
-| 120   | lavsml | DSLAVSML | Oof         |       96 | Player falling short height on lava terrain. |
+| 34    | oof    | DSOOF    | Oof         |       96 | Player falling a great height on solid terrain. |
+| 0     | none   | N/A      | Oof         |       96 | Player falling a short height on solid terrain. |
+| 115   | splash | DSSPLASH | Oof         |       96 | Great fall on water/blood. |
+| 116   | splsml | DSSPLSML | Oof         |       96 | Short fall on water/blood. |
+| 117   | ploosh | DSPLOOSH | Oof         |       96 | Great fall on slime/nukage. |
+| 118   | plosml | DSPLOSML | Oof         |       96 | Short fall on slime/nukage. |
+| 119   | lavsiz | DSLAVSIZ | Oof         |       96 | Great fall on lava/magma. |
+| 120   | lavsml | DSLAVSML | Oof         |       96 | Short fall on lava/magma. |
+| 121   | muddy  | DSMUDDY  | Oof         |       96 | Great fall on mud.
+| 122   | mudsml | DSMUDSML | Oof         |       96 | Short fall on mud.
+| 123   | icicle | DSICICLE | Oof         |       96 | Great fall on ice.
+| 124   | icesml | DSICESML | Oof         |       96 | Short fall on ice.
+| 125   | snowy  | DSSNOWY  | Oof         |       96 | Great fall on snow.
+| 126   | snosml | DSSNOSML | Oof         |       96 | Short fall on snow.
 
 | Index | SFX    | Lump     | Singularity | Priority | Description |
 |-------|--------|----------|-------------|----------|-------------|
