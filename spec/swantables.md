@@ -4,6 +4,8 @@
 
 In the original releases of the Doom engine, the tables of both the switches and animated textures were hardcoded, forcing mappers to use unorthodox and often awkward tricks, by way of manually sorting the texture definitions in the TEXTURE1/2 lumps, to introduce any new switch/animated textures, often times entirely replacing some or all of the originals. This feature specification alleviates this limitation by introducing two new binary lumps, `SWITCHES` and `ANIMATED`, which allow the end user to easily modify both tables to their custom needs.
 
+**WARNING:** this is feature is now considered to be in _Legacy Status_; prefer to use [SWANDEFS](./swandefs.md)
+
 ## Swan Tables text format
 
 The following is the format for the `SWANTBLS` lump to be used to compile the `SWITCHES` and `ANIMATED` lumps at once, it may be included inside the given WAD itself for ease of compiling with any given graphical editing tool in use.
