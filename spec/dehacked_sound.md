@@ -177,18 +177,18 @@
 |-------|--------|----------|-------------|----------|-------------|
 | 34    | oof    | DSOOF    | Oof         |       96 | Player falling a great height on solid terrain. |
 | 0     | none   | N/A      | Oof         |       96 | Player falling a short height on solid terrain. |
-| 115   | splash | DSSPLASH | Oof         |       96 | Great fall on water/blood. |
-| 116   | splsml | DSSPLSML | Oof         |       96 | Short fall on water/blood. |
-| 117   | ploosh | DSPLOOSH | Oof         |       96 | Great fall on slime/nukage. |
-| 118   | plosml | DSPLOSML | Oof         |       96 | Short fall on slime/nukage. |
-| 119   | lavsiz | DSLAVSIZ | Oof         |       96 | Great fall on lava/magma. |
-| 120   | lavsml | DSLAVSML | Oof         |       96 | Short fall on lava/magma. |
-| 121   | muddy  | DSMUDDY  | Oof         |       96 | Great fall on mud.
-| 122   | mudsml | DSMUDSML | Oof         |       96 | Short fall on mud.
-| 123   | icicle | DSICICLE | Oof         |       96 | Great fall on ice.
-| 124   | icesml | DSICESML | Oof         |       96 | Short fall on ice.
-| 125   | snowy  | DSSNOWY  | Oof         |       96 | Great fall on snow.
-| 126   | snosml | DSSNOSML | Oof         |       96 | Short fall on snow.
+| 115   | splash | DSSPLASH | Oof         |       96 | Longer fall on water/blood. |
+| 116   | splsml | DSSPLSML | Oof         |       96 | Brief fall on water/blood. |
+| 117   | ploosh | DSPLOOSH | Oof         |       96 | Longer fall on slime/nukage. |
+| 118   | plosml | DSPLOSML | Oof         |       96 | Brief fall on slime/nukage. |
+| 119   | lavsiz | DSLAVSIZ | Oof         |       96 | Longer fall on lava/magma. |
+| 120   | lavsml | DSLAVSML | Oof         |       96 | Brief fall on lava/magma. |
+| 121   | muddy  | DSMUDDY  | Oof         |       96 | Longer fall on mud. |
+| 122   | mudsml | DSMUDSML | Oof         |       96 | Brief fall on mud. |
+| 123   | icicle | DSICICLE | Oof         |       96 | Longer fall on ice. |
+| 124   | icesml | DSICESML | Oof         |       96 | Brief fall on ice. |
+| 125   | snowy  | DSSNOWY  | Oof         |       96 | Longer fall on snow. |
+| 126   | snosml | DSSNOSML | Oof         |       96 | Brief fall on snow. |
 
 | Index | SFX    | Lump     | Singularity | Priority | Description |
 |-------|--------|----------|-------------|----------|-------------|
