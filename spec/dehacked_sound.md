@@ -134,6 +134,30 @@
 
 | Index | SFX    | Lump     | Singularity | Priority | Description |
 |-------|--------|----------|-------------|----------|-------------|
+| 500   | fre000 | DSFRE000 | None        |      127 | Extended DeHackEd extra sound #0.   |
+| 501   | fre001 | DSFRE001 | None        |      127 | Extended DeHackEd extra sound #1.   |
+| 502   | fre002 | DSFRE002 | None        |      127 | Extended DeHackEd extra sound #2.   |
+| 503   | fre003 | DSFRE003 | None        |      127 | Extended DeHackEd extra sound #3.   |
+| 504   | fre004 | DSFRE004 | None        |      127 | Extended DeHackEd extra sound #4.   |
+| 505   | fre005 | DSFRE005 | None        |      127 | Extended DeHackEd extra sound #5.   |
+| 506   | fre006 | DSFRE006 | None        |      127 | Extended DeHackEd extra sound #6.   |
+| 507   | fre007 | DSFRE007 | None        |      127 | Extended DeHackEd extra sound #7.   |
+| 508   | fre008 | DSFRE008 | None        |      127 | Extended DeHackEd extra sound #8.   |
+| 509   | fre009 | DSFRE009 | None        |      127 | Extended DeHackEd extra sound #9.   |
+| [...] | [...]  | [...]    | [...]       |    [...] | [...]                               |
+| 690   | fre190 | DSFRE190 | None        |      127 | Extended DeHackEd extra sound #190. |
+| 691   | fre191 | DSFRE191 | None        |      127 | Extended DeHackEd extra sound #191. |
+| 692   | fre192 | DSFRE192 | None        |      127 | Extended DeHackEd extra sound #192. |
+| 693   | fre193 | DSFRE193 | None        |      127 | Extended DeHackEd extra sound #193. |
+| 694   | fre194 | DSFRE194 | None        |      127 | Extended DeHackEd extra sound #194. |
+| 695   | fre195 | DSFRE195 | None        |      127 | Extended DeHackEd extra sound #195. |
+| 696   | fre196 | DSFRE196 | None        |      127 | Extended DeHackEd extra sound #196. |
+| 697   | fre197 | DSFRE197 | None        |      127 | Extended DeHackEd extra sound #197. |
+| 698   | fre198 | DSFRE198 | None        |      127 | Extended DeHackEd extra sound #198. |
+| 699   | fre199 | DSFRE199 | None        |      127 | Extended DeHackEd extra sound #199. |
+
+| Index | SFX    | Lump     | Singularity | Priority | Description |
+|-------|--------|----------|-------------|----------|-------------|
 | ????? | banact | DSBANACT | None        |      127 | Banshee sighting and active. |
 | ????? | bandth | DSBANDTH | None        |      127 | Banshee dying. |
 | ????? | banpai | DSBANPAI | None        |      127 | Banshee in pain. |
@@ -172,39 +196,3 @@
 | ????? | vasdth | DSVASDTH | None        |      127 | Vassago dying. |
 | ????? | vaspai | DSVASPAI | None        |      127 | Vassago in pain. |
 | ????? | vassit | DSVASSIT | None        |      127 | Vassago sighting. |
-
-| Index | SFX    | Lump     | Singularity | Priority | Description |
-|-------|--------|----------|-------------|----------|-------------|
-| 34    | oof    | DSOOF    | Oof         |       96 | Player falling great height on solid terrain. |
-| 115   | splash | DSSPLASH | Oof         |       96 | Player falling great height on watery terrain. |
-| 116   | ploosh | DSPLOOSH | Oof         |       96 | Player falling great height on slime/nukage terrain. |
-| 117   | lvsiz  | DSLVSIZ  | Oof         |       96 | Player falling great height on lava terrain. |
-| 0     | none   | N/A      | Oof         |       96 | Player falling short height on solid terrain. |
-| 118   | plsml  | DSSPLSML | Oof         |       96 | Player falling short height on watery terrain. |
-| 119   | plosml | DSPLOSML | Oof         |       96 | Player falling short height on slime/nukage terrain. |
-| 120   | lavsml | DSLAVSML | Oof         |       96 | Player falling short height on lava terrain. |
-
-| Index | SFX    | Lump     | Singularity | Priority | Description |
-|-------|--------|----------|-------------|----------|-------------|
-| 500   | fre000 | DSFRE000 | None        |      127 | Extended DeHackEd extra sound #0.   |
-| 501   | fre001 | DSFRE001 | None        |      127 | Extended DeHackEd extra sound #1.   |
-| 502   | fre002 | DSFRE002 | None        |      127 | Extended DeHackEd extra sound #2.   |
-| 503   | fre003 | DSFRE003 | None        |      127 | Extended DeHackEd extra sound #3.   |
-| 504   | fre004 | DSFRE004 | None        |      127 | Extended DeHackEd extra sound #4.   |
-| 505   | fre005 | DSFRE005 | None        |      127 | Extended DeHackEd extra sound #5.   |
-| 506   | fre006 | DSFRE006 | None        |      127 | Extended DeHackEd extra sound #6.   |
-| 507   | fre007 | DSFRE007 | None        |      127 | Extended DeHackEd extra sound #7.   |
-| 508   | fre008 | DSFRE008 | None        |      127 | Extended DeHackEd extra sound #8.   |
-| 509   | fre009 | DSFRE009 | None        |      127 | Extended DeHackEd extra sound #9.   |
-| [...] | [...]  | [...]    | [...]       |    [...] | [...]                               |
-| 690   | fre190 | DSFRE190 | None        |      127 | Extended DeHackEd extra sound #190. |
-| 691   | fre191 | DSFRE191 | None        |      127 | Extended DeHackEd extra sound #191. |
-| 692   | fre192 | DSFRE192 | None        |      127 | Extended DeHackEd extra sound #192. |
-| 693   | fre193 | DSFRE193 | None        |      127 | Extended DeHackEd extra sound #193. |
-| 694   | fre194 | DSFRE194 | None        |      127 | Extended DeHackEd extra sound #194. |
-| 695   | fre195 | DSFRE195 | None        |      127 | Extended DeHackEd extra sound #195. |
-| 696   | fre196 | DSFRE196 | None        |      127 | Extended DeHackEd extra sound #196. |
-| 697   | fre197 | DSFRE197 | None        |      127 | Extended DeHackEd extra sound #197. |
-| 698   | fre198 | DSFRE198 | None        |      127 | Extended DeHackEd extra sound #198. |
-| 699   | fre199 | DSFRE199 | None        |      127 | Extended DeHackEd extra sound #199. |
-

@@ -54,4 +54,4 @@ When reading a map's data to perform the checksum validation, your port should *
 | Name    | Type    | Description |
 |---------|---------|-------------|
 | `name`  | string  | The name of the specific compatibility flag, i.e. `comp_vile`, `comp_pain` or `comp_soul`. |
-| `value` | integer | Either the integer value "0" (comp flag is turned off) or "1" (comp flag is turned on). |
+| `value` | integer | Value to set the compflag to. |

@@ -55,7 +55,7 @@ export DOOMWADPATH="/usr/local/share/games/doom:/usr/local/share/doom:/usr/share
 | `rekbonus.wad` | `rekkrsl.wad` | vanilla   | REKKR: Bonus Episode |
 | `harmonyc.wad` | `doom2.wad`   | vanilla   | Harmony: Compatible  |
 
-### Legacy of Rust modding reference
+### Legacy of Rust modding reference and resources
 
 | File               | IWAD        | Complevel | Name                                  |
 |--------------------|-------------|-----------|---------------------------------------|
@@ -84,11 +84,11 @@ export DOOMWADPATH="/usr/local/share/games/doom:/usr/local/share/doom:/usr/share
 
 | Environment Variable  | Default *nix path | Description |
 |-----------------------|-------------------|-------------|
-| `XDG_DESKTOP_DIR`     | `$HOME/Desktop`   | User's desktop graphical interface; Optionally save `*.desktop` files here. |
-| `XDG_DOCUMENTS_DIR`   | `$HOME/Documents` | User's documents; Office and other assorted work. |
-| `XDG_DOWNLOAD_DIR`    | `$HOME/Downloads` | User's general downloaded files directory; Usually messy. |
-| `XDG_MUSIC_DIR`       | `$HOME/Music`     | User's locally installed music files; Oft sparse, rarely filled. |
-| `XDG_PICTURES_DIR`    | `$HOME/Pictures`  | User's image files; Screenshots go here. |
+| `XDG_DESKTOP_DIR`     | `$HOME/Desktop`   | User's desktop graphical interface. |
+| `XDG_DOCUMENTS_DIR`   | `$HOME/Documents` | User's documents. |
+| `XDG_DOWNLOAD_DIR`    | `$HOME/Downloads` | User's general downloaded files directory. |
+| `XDG_MUSIC_DIR`       | `$HOME/Music`     | User's locally installed music files. |
+| `XDG_PICTURES_DIR`    | `$HOME/Pictures`  | User's image files. |
 | `XDG_PUBLICSHARE_DIR` | `$HOME/Public`    | User's network-shared files. |
 | `XDG_TEMPLATES_DIR`   | `$HOME/Templates` | User's document template files. |
 | `XDG_VIDEOS_DIR`      | `$HOME/Videos`    | User's saved video files. |

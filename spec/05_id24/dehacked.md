@@ -8,11 +8,8 @@ ID24HACKED is a superset of the following Dehacked features:
 
 - Vanilla
 - Boom
-- MUSINFO
 - MBF
-- DEHEXTRA
 - MBF21
-- DSDHACKED
 
 It includes and supports everything defined by those ports and specifications. The above list is also considered an order, from least features to most features with each featureset being a superset of the prior one, for the sake of determining a featureset for the engine to run in.
 
@@ -25,15 +22,6 @@ There are two primary methods for identifying an `ID24HACKED` patch:
 
 For the sake of convenience, a Dehacked implementation should be able to report the highest level featureset encountered so that the engine can determine whether it should consider the patch valid.
 
-## Dehacked patch initialization order
-
-While MBF stated that Dehacked patches from a command line are to be considered first, this behavior conflicts with the accumulation requirements specified above. The order for Dehacked patch initialization is now as follows:
-
-- Every DEHACKED lump found in the WAD dictionary, in order from first loaded WAD (including the IWAD) to the last loaded WAD.
-- Any .deh files encountered on the command line in the order specified (if the port supports loading from the command line).
-
-This also applies retroactively to the previously stated baseline features.
-
 ## DEHACKED limitation removals
 
 It has become apparent that the requirements for id Software and/or its affiliates to add new features to its commercial Doom and Doom II releases and taking existing community standards into account would result in potentially breaking any number of user mods. The following limitation removals are designed to sidestep this while allowing current and future commercial releases to add new features as required without this concern hanging overhead.
@@ -43,12 +31,12 @@ It has become apparent that the requirements for id Software and/or its affiliat
 The range of possible values is divided up amongst a few purposes, As well as limitations placed on a DEHACKED patch, those purposes are illustrated in the following table:
 
 | First index | Last index | Create? | Modify? | Purpose |
-|------------|-----|-----|-----|-----|
-| 0x00000000 | 0x7FFFFFFF | **Y** | **Y** | Original valid range. |
-| 0x80000000 | 0x8FFFFFFF | **N** | **N** | **Implementation defined**. Essentially a place for _source ports to define internal/port-specific objects_. |
-| 0x90000000 | 0xBFFFFFFF | **N** | **Y** | **Reserved for exclusive use by id Software and its affiliates**. Any future specifications published by id Software and/or its affiliates will use indices within this range. |
-| 0xC0000000 | 0xFFFFFFFE | **N** | **Y** | **Reserved for the community**. Any future community specifications that are published should use indices from within this range. |
-| 0xFFFFFFFF | 0xFFFFFFFF | **N** | **N** | Invalid index. |
+|-------------|------------|---------|---------|---------|
+| 0x00000000  | 0x7FFFFFFF | **Y**   | **Y**   | Original valid range. |
+| 0x80000000  | 0x8FFFFFFF | **N**   | **N**   | **Implementation defined**. Essentially a place for _source ports to define internal/port-specific objects_. |
+| 0x90000000  | 0xBFFFFFFF | **N**   | **Y**   | **Reserved for exclusive use by id Software and its affiliates**. Any future specifications published by id Software and/or its affiliates will use indices within this range. |
+| 0xC0000000  | 0xFFFFFFFE | **N**   | **Y**   | **Reserved for the community**. Any future community specifications that are published should use indices from within this range. |
+| 0xFFFFFFFF  | 0xFFFFFFFF | **N**   | **N**   | Invalid index. |
 
 When dealing with 16-bit values such as the thing type number found in map definitions (specified by the `ID #` field in a Thing definition), the following values apply:
 
@@ -63,25 +51,6 @@ When dealing with 16-bit values such as the thing type number found in map defin
 ## String mnemonics
 
 String mnemonics starting with **USER_** are to be added to the mnemonic resolution table. There is no limitation to what these mnemonics can be called outside of the requirement to begin with **USER_**.
-
-In addition, the following mnemonics and their corresponding strings have been added:
-
-| Mnemonic              | String                                |
-|-----------------------|---------------------------------------|
-| ID24_GOTINCINERATOR   | You got the incinerator!              |
-| ID24_GOTCALAMITYBLADE | You got the calamity blade! Hot damn! |
-| ID24_GOTFUELCAN       | Picked up a fuel can.                 |
-| ID24_GOTFUELTANK      | Picked up a fuel tank.                |
-| ID24_COLOR_GREEN      | Green                                 |
-| ID24_COLOR_INDIGO     | Indigo                                |
-| ID24_COLOR_BROWN      | Brown                                 |
-| ID24_COLOR_RED        | Red                                   |
-| ID24_COLOR_YELLOW     | Yellow                                |
-| ID24_COLOR_BLUE       | Blue                                  |
-| ID24_COLOR_NAVY       | Navy                                  |
-| ID24_COLOR_MAGENTA    | Magenta                               |
-
-Any unknown mnemonics encountered in a Dehacked file should be ignored.
 
 ## Codepointer verification
 
