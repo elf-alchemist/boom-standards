@@ -344,43 +344,56 @@
 | OB_MPBFG_BOOM    | "%o was splintered by %k's BFG." |
 | OB_MPTELEFRAG    | "%o was telefragged by %k." |
 
-| Melee Obituaries             | Default value |
-|------------------------------|---------------|
-| OB_UNDEADHIT                 | "%o was punched by a revenant." |
-| OB_IMPHIT                    | "%o was slashed by an imp." |
-| OB_CACOHIT                   | "%o got too close to a cacodemon." |
-| OB_DEMONHIT                  | "%o was bit by a demon." |
-| OB_SPECTREHIT                | "%o was eaten by a spectre." |
-| OB_BARONHIT                  | "%o was ripped open by a Baron of Hell." |
-| OB_KNIGHTHIT                 | "%o was gutted by a Hell Knight." |
-| Obituary_Deh_Actor_150_Melee | "" |
-| Obituary_Deh_Actor_151_Melee | "" |
-| [...]                        | [...] |
-| Obituary_Deh_Actor_248_Melee | "" |
-| Obituary_Deh_Actor_249_Melee | "" |
+| Melee Obituaries                 | Default value |
+|----------------------------------|---------------|
+| OB_UNDEADHIT                     | "%o was punched by a revenant." |
+| OB_IMPHIT                        | "%o was slashed by an imp." |
+| OB_CACOHIT                       | "%o got too close to a cacodemon." |
+| OB_DEMONHIT                      | "%o was bit by a demon." |
+| OB_SPECTREHIT                    | "%o was eaten by a spectre." |
+| OB_BARONHIT                      | "%o was ripped open by a Baron of Hell." |
+| OB_KNIGHTHIT                     | "%o was gutted by a Hell Knight." |
+| Obituary_Deh_Actor_145_Melee[^1] | "" |
+| Obituary_Deh_Actor_146_Melee     | "" |
+| Obituary_Deh_Actor_147_Melee     | "" |
+| Obituary_Deh_Actor_148_Melee     | "" |
+| Obituary_Deh_Actor_149_Melee     | "" |
+| Obituary_Deh_Actor_150_Melee[^2] | "" |
+| Obituary_Deh_Actor_151_Melee     | "" |
+| [...]                            | [...] |
+| Obituary_Deh_Actor_248_Melee     | "" |
+| Obituary_Deh_Actor_249_Melee     | "" |
 
-| Ranged Obituaries      | Default value |
-|------------------------|---------------|
-| OB_ZOMBIE              | "%o was killed by a zombieman." |
-| OB_SHOTGUY             | "%o was shot by a sergeant." |
-| OB_VILE                | "%o was incinerated by an archvile." |
-| OB_UNDEAD              | "%o couldn't evade a revenant's fireball." |
-| OB_FATSO               | "%o was squashed by a mancubus." |
-| OB_CHAINGUY            | "%o was perforated by a chaingunner." |
-| OB_SKULL               | "%o was spooked by a lost soul." |
-| OB_IMP                 | "%o was burned by an imp." |
-| OB_CACO                | "%o was smitten by a cacodemon." |
-| OB_BARON               | "%o was bruised by a Baron of Hell." |
-| OB_KNIGHT              | "%o was splayed by a Hell Knight." |
-| OB_SPIDER              | "%o stood in awe of the spider demon." |
-| OB_BABY                | "%o let an arachnotron get %h." |
-| OB_CYBORG              | "%o was splattered by a cyberdemon." |
-| OB_WOLFSS              | "%o met a Nazi." |
-| Obituary_Deh_Actor_150 | "" |
-| Obituary_Deh_Actor_151 | "" |
-| [...]                  | [...] |
-| Obituary_Deh_Actor_248 | "" |
-| Obituary_Deh_Actor_249 | "" |
+| Ranged Obituaries          | Default value |
+|----------------------------|---------------|
+| OB_ZOMBIE                  | "%o was killed by a zombieman." |
+| OB_SHOTGUY                 | "%o was shot by a sergeant." |
+| OB_VILE                    | "%o was incinerated by an archvile." |
+| OB_UNDEAD                  | "%o couldn't evade a revenant's fireball." |
+| OB_FATSO                   | "%o was squashed by a mancubus." |
+| OB_CHAINGUY                | "%o was perforated by a chaingunner." |
+| OB_SKULL                   | "%o was spooked by a lost soul." |
+| OB_IMP                     | "%o was burned by an imp." |
+| OB_CACO                    | "%o was smitten by a cacodemon." |
+| OB_BARON                   | "%o was bruised by a Baron of Hell." |
+| OB_KNIGHT                  | "%o was splayed by a Hell Knight." |
+| OB_SPIDER                  | "%o stood in awe of the spider demon." |
+| OB_BABY                    | "%o let an arachnotron get %h." |
+| OB_CYBORG                  | "%o was splattered by a cyberdemon." |
+| OB_WOLFSS                  | "%o met a Nazi." |
+| Obituary_Deh_Actor_145[^1] | "" |
+| Obituary_Deh_Actor_146     | "" |
+| Obituary_Deh_Actor_147     | "" |
+| Obituary_Deh_Actor_148     | "" |
+| Obituary_Deh_Actor_149     | "" |
+| Obituary_Deh_Actor_150[^2] | "" |
+| Obituary_Deh_Actor_151     | "" |
+| [...]                      | [...] |
+| Obituary_Deh_Actor_248     | "" |
+| Obituary_Deh_Actor_249     | "" |
+
+[^1]: The DeHackEd Actors 145-149 are the MBF-introduced Things for beta emulation and the Helper Dog.
+[^2]: Extended DeHackEd's Extra Things 0-99
 
 | Inter Text | Default value |
 |------------|---------------|
