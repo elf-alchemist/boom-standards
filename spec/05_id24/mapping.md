@@ -110,8 +110,8 @@ New special types have been added to scroll both the front and the back sidedefs
 | 2081  | GR      | Set the target sector's colormap. |
 | 2082  | Always  | Scroll both front and back sidedef's textures according to the line's left direction. |
 | 2083  | Always  | Scroll both front and back sidedef's textures according to the line's right direction. |
-| 2084  | Always  | Scroll both front and back sidedef's textures according the target sector's scroll values divided by 8. |
-| 2085  | Always  | Scroll both front and back sidedef's textures according the target sector's movement divided by 8. |
+| 2084  | Always  | Scroll both front and back sidedef's textures according to the target sector's scroll values divided by 8. |
+| 2085  | Always  | Scroll both front and back sidedef's textures according to the target sector's movement divided by 8. |
 | 2086  | Always  | Scroll both front and back sidedef's textures and accelerate the scroll value by the target sector's movement divided by 8. |
 | 2087  | W1      | Change music and make it loop, reset to looping default if no track defined. |
 | 2088  | WR      | Change music and make it loop, reset to looping default if no track defined. |
