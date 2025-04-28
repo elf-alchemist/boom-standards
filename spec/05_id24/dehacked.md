@@ -11,16 +11,7 @@ ID24HACKED is a superset of the following Dehacked features:
 - MBF
 - MBF21
 
-It includes and supports everything defined by those ports and specifications. The above list is also considered an order, from least features to most features with each featureset being a superset of the prior one, for the sake of determining a featureset for the engine to run in.
-
-## Identifying an ID24HACKED patch
-
-There are two primary methods for identifying an `ID24HACKED` patch:
-
-- `Doom version` is set to `2024`
-- Encountering anything specified in this document that is not defined in the baseline features
-
-For the sake of convenience, a Dehacked implementation should be able to report the highest level featureset encountered so that the engine can determine whether it should consider the patch valid.
+It includes and supports everything defined by those ports and specifications. The above list is also considered an order, from least features to most features with each featureset being a superset of the prior one, for the sake of determining a featureset for the engine to run in. To identify a `DEHACKED` lump's version, the `Doom version` header variable is set to `2024`
 
 ## DEHACKED limitation removals
 
@@ -227,8 +218,6 @@ The following values apply to the **Pickup item type** enumeration:
 ### Thing defaults
 
 All things defined by prior specifications are to have default values set to those defined in the fields table; all used-defined things likewise will have those same default values.
-
-However, the MF_TRANSLUCENT flag added to select things by Boom tables is to be removed from the tables entirely. The flag must still be allowed to be set by a DeHackEd patch, but the default tables must reflect vanilla Doom for all relevant values.
 
 Some exceptional default values must be set on certain hardcoded things. These are:
 
