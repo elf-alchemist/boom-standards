@@ -12,28 +12,30 @@ A MBF21-capable port is expected to implement all features for those standards.
 
 ## Generalized Sector Types
 
-| Dec  | Bit | Description            |
-|------|-----|------------------------|
-| 4096 | 12  | Alternate damage mode  |
-| 8192 | 13  | Kill grounded monsters |
+| Bit | Hex    | Description            |
+|-----|--------|------------------------|
+| 12  | 0x1000 | Alternate damage mode  |
+| 13  | 0x2000 | Kill grounded monsters |
 
 ### Alternate damage mode
 
 The meaning of the damage bits changes when the alternate damage mode bit is set.
 
-| Dec | Bit 6-5 | Description                                                   |
-|-----|---------|---------------------------------------------------------------|
-| 0   | 00      | Kills a player unless they have a rad suit or invulnerability |
-| 32  | 01      | Kills a player                                                |
-| 64  | 10      | Kills all players and exits the map (normal exit)             |
-| 96  | 11      | Kills all players and exits the map (secret exit)             |
+| Bits 6-5 | Hex    | Description                                                   |
+|----------|--------|---------------------------------------------------------------|
+| 00       | 0x0000 | Kills a player unless they have a rad suit or invulnerability |
+| 01       | 0x0020 | Kills a player                                                |
+| 10       | 0x0040 | Kills all players and exits the map (normal exit)             |
+| 11       | 0x0060 | Kills all players and exits the map (secret exit)             |
 
 ## Line Flags
 
-| Dec  | Bit | Description          |
-|------|-----|----------------------|
-| 4096 | 12  | Block land monsters  |
-| 8192 | 13  | Block players        |
+| Bit | Hex    | Description |
+|-----|--------|-------------|
+|  10 | 0x0400 | Reserved |
+|  11 | 0x0800 | Reserved |
+|  12 | 0x1000 | Blocks grounded monsters. |
+|  13 | 0x2000 | Blocks players. |
 
 ## Tagged line scroll variants
 
@@ -57,6 +59,6 @@ As defined in the original boom spec:
 
 | Index | Trigger | Description |
 |-------|---------|-------------|
-| 1024  | Always  | Front sidedef tagged scroll. |
-| 1025  | Always  | Front sidedef tagged scroll, displacement variant. |
-| 1026  | Always  | Front sidedef tagged scroll, accelerative variant. |
+| 1024  | Static  | Front sidedef tagged scroll. |
+| 1025  | Static  | Front sidedef tagged scroll, displacement variant. |
+| 1026  | Static  | Front sidedef tagged scroll, accelerative variant. |
