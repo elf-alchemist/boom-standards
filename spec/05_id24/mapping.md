@@ -1,6 +1,6 @@
 # ID24 Mapping Extensions
 
-### Baseline features
+## Baseline features
 
 The ID24 map additions are a superset of the following specifications:
 
@@ -70,7 +70,7 @@ When a sector's colormap is set this way, it entirely overrides the default colo
 
 New special types have been added to scroll both the front and the back sidedefs of a line in the same cardinal direction. The defined direction is relative to the front sidedef of a line.
 
-### Line specials table
+### Line specials
 
 | Index | Trigger | Description |
 |-------|---------|-------------|
